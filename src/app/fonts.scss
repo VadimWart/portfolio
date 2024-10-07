@@ -1,0 +1,32 @@
+/* FONTS Quantico*/
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/Quantico-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./assets/fonts/Quantico-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./assets/fonts/Quantico-Italic.ttf") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Quantico";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./assets/fonts/Quantico-BoldItalic.ttf") format("woff2");
+}

@@ -1,0 +1,86 @@
+@import "./app/fonts.scss";
+@import "./media-query.scss";
+
+html {
+  @include desktop {
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+      scrollbar-width: thick;
+      scrollbar-color: #97ac2f #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #97ac2f;
+      border-radius: 5px;
+      border: 2px solid #ffffff;
+    }
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Quantico";
+  color: #fffdfd;
+  background: linear-gradient(
+    179.85deg,
+    #000000 9.26%,
+    #1a1a1a 19.21%,
+    #181818 24.73%,
+    #070707 40.17%,
+    #101010 55.4%,
+    #101010 94.49%
+  );
+
+  @include desktop {
+    background: linear-gradient(
+      82deg,
+      #000 0%,
+      #000 14%,
+      #2b2828 58%,
+      #141414 76%,
+      #000 100%
+    );
+  }
+}
+
+.transparent-btn {
+  background-color: #b5e93b;
+  color: #4a4a4a;
+  &:hover {
+    background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+    color: #252525;
+  }
+}
+
+.green-btn {
+  color: white;
+  background-color: #b5e93b00;
+  border: 1px solid #b5e93b;
+  &:hover {
+    background-color: #d3ed9733;
+  }
+}
+
+.arrow {
+  // display: flex;
+  // justify-content: flex-end;
+  > a {
+    &:hover {
+      filter: drop-shadow(0px 0px 4px #b5e93b);
+    }
+  }
+}
