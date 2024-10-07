@@ -1,8 +1,8 @@
 @import "./app/fonts.scss";
-@import "./media-query.scss";
+@import "./media_query.scss";
 
 html {
-  @include desktop {
+  @include desktopUp900 {
     /* ===== Scrollbar CSS ===== */
     /* Firefox */
     * {
@@ -45,7 +45,7 @@ body {
     #101010 94.49%
   );
 
-  @include desktop {
+  @include desktopUp900 {
     background: linear-gradient(
       82deg,
       #000 0%,

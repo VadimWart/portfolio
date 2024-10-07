@@ -1,0 +1,238 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  h2,
+  h3 {
+    color: $green-color;
+    margin: 0;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+    color: #fffdfd;
+  }
+  @include desktopUp900 {
+    width: 100vw;
+    height: unset;
+  }
+}
+
+.shadowbox {
+  background: linear-gradient(
+    170.9deg,
+    rgba(0, 0, 0, 0.5) -52.37%,
+    rgba(23, 22, 22, 0.5) 197.35%
+  );
+  @include size(29px, 100%);
+  opacity: 80%;
+  position: fixed;
+  border-radius: 8px;
+  top: 73px;
+  @include desktopUp900 {
+    display: none;
+  }
+}
+
+.person-pic {
+  background-image: url("../../../assets/img/Photo.png");
+  @include size(400px, 310px);
+  background-position: bottom; /* Zentriert das Bild im Container */
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 75px;
+
+  @include mobile360 {
+    width: 303px;
+  }
+  @include desktopUp900 {
+    @include size(100vh, 720px);
+    background-size: cover;
+    margin-top: 0;
+    position: relative;
+    @include desktopUp1300 {
+      width: clamp(850px, 50vw + 100px, 1675px);
+    }
+  }
+  @include mobileUp600to900 {
+    width: clamp(310px, calc(100vw - 150px), 490px);
+    height: clamp(400px, calc(100vh - 10px), 590px);
+  }
+}
+
+.front {
+  @include size(361px, 100%);
+  @include flexBox(flex, center, center);
+  flex: 1;
+  flex-direction: column;
+  @include desktopUp900 {
+    flex-direction: unset;
+    align-items: flex-start;
+  }
+}
+
+.name-profession-txt {
+  @include flexBox(flex, center, center);
+  flex-direction: column;
+  @include size(134px, 100%);
+  padding-top: 19.5px;
+  margin-bottom: 80px;
+}
+
+.arrow {
+  padding-top: 348px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.seperator {
+  width: 2px;
+  height: 22px;
+  background: #fffdfd;
+}
+
+.links {
+  @include flexBox(flex, center, flex-end);
+  gap: 16px;
+  margin-top: 35px;
+  position: fixed;
+  left: clamp(500px, 100vw - 350px, 1100px);
+  > a img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(76%) sepia(89%) saturate(363%)
+        hue-rotate(24deg) brightness(99%) contrast(93%);
+      animation: rotate 2s linear infinite; /* Start rotation on hover */
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lang-select {
+  display: flex;
+  margin-left: 48px;
+  gap: 6px;
+  > span {
+    cursor: pointer;
+    &:hover {
+      color: $green-color;
+    }
+  }
+}
+
+@media (width >= 900px) and (width <= 1120px) {
+  .person-pic {
+    width: 750px;
+    background-size: contain;
+  }
+
+  .responsiv-arrow {
+    margin: 0;
+  }
+}
+
+.name-wrapper {
+  position: absolute;
+  left: 21%;
+  top: 63%;
+  > div {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.animation-wrapper {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
+  animation-delay: 0.2s;
+}
+.animation-wrapper-2nd-name {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
+  animation-delay: 1s;
+}
+
+.animation-wrapper-frontend {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
+  animation-delay: 1.5s;
+  > span {
+    @include neon-text();
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.name-content-wrapper {
+  gap: 15px;
+}
+
+.name {
+  font-size: 100px;
+  font-weight: 700;
+
+  color: $green-color;
+}
+@media (width <= 1121px) {
+  .name {
+    font-size: 92px;
+  }
+}
+
+.selected {
+  color: $green-color;
+}
+
+.email-icon {
+  @include icon-style(
+    "./../../../assets/img/email_default.png",
+    "./../../../assets/img/email_hover.png"
+  );
+}
+
+.linkedin-icon {
+  @include icon-style(
+    "./../../../assets/img/linkedin_default.png",
+    "./../../../assets/img/linkedin_hover.png"
+  );
+}
+
+.git-icon {
+  @include icon-style(
+    "./../../../assets/img/git_default.png",
+    "./../../../assets/img/git_hover.png"
+  );
+}

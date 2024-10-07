@@ -55,9 +55,8 @@ $font-style-normal: normal;
   grid-column: $gc;
 }
 
-@mixin dFlex($jc: center, $ai: center, $g: 0px) {
-  display: flex;
-  justify-content: $jc;
+@mixin flexBox($df: flex, $ai, $jc) {
+  display: $df;
   align-items: $ai;
-  gap: $g;
+  justify-content: $jc;
 }
