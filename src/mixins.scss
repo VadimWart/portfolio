@@ -31,10 +31,8 @@ $font-style-normal: normal;
 
 @mixin text($fs, $fw, $fsn) {
   font-size: $fs;
-  font-style: $fsn;
-  font-family: $font-family;
   font-weight: $fw;
-  color: $white-color;
+  font-style: $fsn;
 }
 
 @mixin icon-style($default-img, $hover-img, $width: 30px, $height: 30px) {

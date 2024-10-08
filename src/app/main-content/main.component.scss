@@ -1,0 +1,14 @@
+@import "./../fonts.scss";
+@import "./../../media_query.scss";
+@import "./../../mixins.scss";
+
+.scroll-container {
+  cursor: default;
+  @include desktopUp900 {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+    align-items: center;
+    overflow-x: scroll;
+  }
+}
