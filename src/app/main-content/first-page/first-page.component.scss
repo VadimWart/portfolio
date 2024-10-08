@@ -172,6 +172,7 @@ section {
   animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
   animation-delay: 0.2s;
 }
+
 .animation-wrapper-2nd-name {
   transform: translateY(50px);
   opacity: 0;
@@ -206,6 +207,7 @@ section {
 
   color: $green-color;
 }
+
 @media (width <= 1121px) {
   .name {
     font-size: 92px;

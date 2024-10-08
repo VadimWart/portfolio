@@ -20,8 +20,9 @@ header {
   height: 100%;
 }
 
-.ps-logo {
-  @include size(64px, 64px);
+.navbar-logo {
+  padding-bottom: 100px;
+  @include size(none, 64px);
   @include desktopUp900 {
     @include size(110px, 130px);
   }
@@ -54,10 +55,6 @@ header {
       }
     }
   }
-}
-
-.navbar-logo {
-  padding-bottom: 100px;
 }
 
 @keyframes slideDown {
@@ -167,4 +164,19 @@ header {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+.navigation-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 72px;
+  img {
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(91%) sepia(2%) saturate(1250%)
+        hue-rotate(312deg) brightness(109%) contrast(102%);
+    }
+  }
 }

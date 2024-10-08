@@ -1,21 +1,44 @@
-<header>
+<header [ngStyle]="getDynamicStyle()" [ngClass]="{ 'show-header': showHeader }">
   <nav class="sidebar">
-    <div class="navbar-logo">
-      <img src="./../../../assets/img/logo130.svg" alt="" />
+    <div>
+      <img class="navbar-logo" src="./../../../assets/img/logo130.svg" alt="" />
     </div>
 
-    <ul>
-      <li><a href="#whyMe">Why me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#myWork">My Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul *ngIf="isDesktop" class="navigation-line">
+      <li>
+        <a href="#whyMe" (click)="scrollToPosition(0)" (click)="activeNav(0)"
+          >Why me</a
+        >
+      </li>
+      <li>
+        <a href="#skills" (click)="scrollToPosition(1)" (click)="activeNav(1)"
+          >Skills</a
+        >
+      </li>
+      <li>
+        <a href="#myWork" (click)="scrollToPosition(2)" (click)="activeNav(2)"
+          >My Work</a
+        >
+      </li>
+      <li>
+        <a href="#contact" (click)="scrollToPosition(3)" (click)="activeNav(3)"
+          >Contact</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
 
-<div id="nav-icon1">
+<div
+  id="nav-icon1"
+  [ngClass]="{ open: this.BurgerMenuService.isAnimation }"
+  (click)="this.BurgerMenuService.toggleMenu()"
+>
   <span></span>
   <span></span>
   <span></span>
 </div>
-<!-- <app-burger-menu></app-burger-men> -->
+<app-burger-menu
+  *ngIf="!isDesktop"
+  [ngClass]="{ 'd-none': this.BurgerMenuService.menuClosedAtStart }"
+></app-burger-menu>

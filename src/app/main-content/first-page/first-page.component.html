@@ -27,7 +27,11 @@
           </div>
         </div>
       </div>
-      <div class="arrow responsiv-arrow">
+      <div
+        class="arrow responsiv-arrow"
+        (click)="scrollToPosition(0)"
+        *ngIf="isDesktop"
+      >
         <a>
           <img src="./../../../assets/img/arrow_default.png" alt="" />
         </a>
