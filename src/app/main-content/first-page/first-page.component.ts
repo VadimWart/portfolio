@@ -12,7 +12,6 @@ import { ScrollService } from '../services/scroll-service';
 export class FirstPageComponent {
   @Input() scrollToSection!: () => void;
   @Input() scrollContainer!: string;
-  isSelected = false;
 
   @Input() isDesktop!: boolean;
   constructor(private scrollService: ScrollService) {}

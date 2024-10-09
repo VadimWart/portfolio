@@ -20,7 +20,7 @@ export class NavbarComponent {
   fullStyle: boolean = true;
   showHeader: boolean = false;
   isMainPage: boolean = true;
-  active: number | null = null;
+  // active: number | null = null;
   @Input() isDesktop!: boolean;
 
   constructor(
@@ -31,19 +31,19 @@ export class NavbarComponent {
     this.checkUrl();
   }
 
-  // ngOnInit(): void {
-  //   this.updateIsDesktop();
-  //   window.addEventListener('resize', this.updateIsDesktop.bind(this));
-  // }
+  ngOnInit(): void {
+    this.updateIsDesktop();
+    window.addEventListener('resize', this.updateIsDesktop.bind(this));
+  }
 
-  // ngOnDestroy(): void {
-  //   window.removeEventListener('resize', this.updateIsDesktop.bind(this));
-  // }
+  ngOnDestroy(): void {
+    window.removeEventListener('resize', this.updateIsDesktop.bind(this));
+  }
 
-  // // Methode, um isDesktop basierend auf der Fenstergröße zu aktualisieren
-  // updateIsDesktop() {
-  //   this.isDesktop = window.innerWidth >= 900; // 900px ist eine Beispielgröße für Desktop-Ansicht
-  // }
+  // Methode, um isDesktop basierend auf der Fenstergröße zu aktualisieren
+  updateIsDesktop() {
+    this.isDesktop = window.innerWidth >= 900; // 900px ist eine Beispielgröße für Desktop-Ansicht
+  }
 
   scrollToPosition(position: number) {
     let width = window.innerWidth;

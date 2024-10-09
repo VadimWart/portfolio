@@ -1,0 +1,218 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  padding-top: 80px;
+  @include desktopUp900 {
+    display: flex;
+    min-width: 835px;
+    margin-bottom: 120px;
+    // gap: 40px;
+    margin-left: 104px;
+    padding-top: 0px;
+  }
+}
+
+div {
+  @include desktopUp900 {
+    padding: 0;
+  }
+  padding: 0 26px;
+  font-size: 16px;
+}
+
+.why-me-title {
+  writing-mode: vertical-rl; /* Vertikaler Text */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Dreht den Text um 180 Grad */
+  > h1 {
+    @include neon-text($font-size: 54px);
+    padding: 230px 0px 0px 0px;
+  }
+}
+
+.why-me-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  padding-left: 100px;
+}
+
+.icon-container {
+  flex-direction: column;
+  @include flexBox(flex, center, none);
+  > p {
+    @include text($fs: 18px, $fw: $font-weight-400, $fsn: $font-style-normal);
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    cursor: default;
+  }
+  &:hover {
+    p {
+      @include text($fs: 18px, $fw: $font-weight-400, $fsn: $font-style-normal);
+      color: $green-color; // Ändert die Textfarbe beim Hover über den Icon-Container
+    }
+    .located_icon {
+      background-image: url("./../../../assets/img/location_hover.png"); // Ändert das Icon beim Hover
+    }
+    .remote_icon {
+      background-image: url("./../../../assets/img/remote_hover.png");
+    }
+  }
+}
+
+.located_icon {
+  @include icon-style(
+    "./../../../assets/img/location_default.png",
+    "./../../../assets/img/location_hover.png",
+    142px,
+    61px
+  );
+}
+
+.remote_icon {
+  @include icon-style(
+    "./../../../assets/img/remote_default.png",
+    "./../../../assets/img/remote_hover.png",
+    142px,
+    61px
+  );
+}
+
+.i-am-section {
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $green-color;
+    margin: 0;
+    @include desktopUp900 {
+      font-size: 48px;
+      width: 100%;
+    }
+  }
+  @include flexBox(flex, center, center);
+  flex-direction: column;
+  gap: 16px;
+  @include desktopUp900 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.relocate-img {
+  transition: transform 200ms ease-out, opacity 200ms ease-out;
+}
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include size(95px, 128px);
+  height: auto;
+  &:hover {
+    color: $green-color;
+  }
+}
+
+// .hover-image {
+//   width: 100%;
+//   height: auto;
+//   position: absolute;
+//   top: 0;
+//   left: -3px;
+//   transition: opacity 75ms ease-out;
+
+//   @include desktopUp900 {
+//     width: unset;
+//     left: unset;
+//   }
+// }
+
+.top-center {
+  top: 10px;
+}
+
+.placetaker {
+  @include size(35px, 128px);
+  margin-bottom: 5px;
+}
+
+.placetaker-second {
+  @include size(60px, 128px);
+  margin-bottom: 5px;
+  @include desktopUp900 {
+    @include size(45px, 128px);
+  }
+}
+
+.txt-with-icon {
+  inline-size: max-content;
+  &hover {
+    color: $green-color;
+  }
+}
+
+.mbt50 {
+  margin-top: 50px;
+}
+
+.mobile-txt {
+  display: block;
+  @include desktopUp900 {
+    display: none;
+  }
+}
+
+.desktop-txt {
+  display: none;
+  @include desktopUp900 {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 18px;
+  }
+}
+
+.image-wrapper {
+  @include desktopUp900 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+}
+
+// .mobile-img {
+//   @include desktopUp900 {
+//     display: none;
+//   }
+// }
+
+// .desktop-img {
+//   display: none;
+//   @include desktopUp900 {
+//     display: block;
+//   }
+// }
+
+.contact-me-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @include desktopUp900 {
+    justify-content: flex-end;
+  }
+}
+
+.arrow {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 61px;
+}
+
+.section-wrapper {
+  @include desktopUp900 {
+    width: 715px;
+    margin-left: 20px;
+  }
+}

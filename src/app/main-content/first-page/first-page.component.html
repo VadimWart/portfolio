@@ -3,7 +3,7 @@
   <div class="front">
     <div class="wrapper">
       <div class="person-pic">
-        <div class="icons links">
+        <div *ngIf="isDesktop" class="icons links">
           <a href="#"><div class="email-icon"></div></a>
           <a href="#"><div class="linkedin-icon"></div></a>
           <a href="#"><div class="git-icon"></div></a>
@@ -13,12 +13,12 @@
             <span>EN</span>
           </div>
         </div>
-        <div class="name-wrapper">
+        <div *ngIf="isDesktop" class="name-wrapper">
           <div class="name-content-wrapper">
             <div class="animation-wrapper">
               <span class="name">Vadim </span>
             </div>
-            <div class="animation-wrapper-2nd-name">
+            <div class="animation-wrapper-second-name">
               <span class="name">Wart</span>
             </div>
           </div>
@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="name-profession-txt">
+    <div *ngIf="!isDesktop" class="name-profession-txt">
       <h2>FRONTEND DEVELOPER</h2>
       <h1>Vadim Wart</h1>
       <h3>Steinfurt</h3>

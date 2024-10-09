@@ -1,5 +1,6 @@
 @import "./app/fonts.scss";
 @import "./media_query.scss";
+@import "./mixins.scss";
 
 html {
   @include desktopUp900 {
@@ -57,16 +58,19 @@ body {
   }
 }
 
-.transparent-btn {
-  background-color: #b5e93b;
+.green-btn {
+  @include size(43px, 135px);
+  border-style: unset;
+  background-color: $green-color;
+  border-radius: 30px;
   color: #4a4a4a;
+  margin-bottom: 80px;
   &:hover {
     background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
-    color: #252525;
   }
 }
 
-.green-btn {
+.transparent-btn {
   color: white;
   background-color: #b5e93b00;
   border: 1px solid #b5e93b;
