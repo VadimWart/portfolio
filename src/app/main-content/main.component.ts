@@ -15,11 +15,13 @@ import { BurgerMenuService } from './services/burger-menu-service';
 import { Router } from '@angular/router';
 import { ScrollService } from './services/scroll-service';
 import { debounceTime, fromEvent } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main',
   standalone: true,
   imports: [
+    CommonModule,
     SkillsComponent,
     ContactComponent,
     MyWorkComponent,

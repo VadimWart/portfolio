@@ -1,1 +1,33 @@
-<p>skills works!</p>
+<section>
+  <div (click)="scrollToPosition(1200)" class="arrow">
+    <a href="#skills">
+      <img src="./../../../assets/img/arrow_default.png" alt="" />
+    </a>
+  </div>
+  <div class="headline skills-title">
+    <h1>My Skill Set</h1>
+  </div>
+
+  <div class="skill-container">
+    <span>
+      The IT landscape is continuously evolving, with new technologies and
+      methodologies. Staying motivated to expand my IT skills requires a
+      strategic approach, a curious mindset, and a commitment to lifelong
+      learning.</span
+    >
+    <div class="icon-container">
+      @for (icon of icons; track $index) {
+
+      <div>
+        <img [src]="icon.path" alt="" />
+        <span>{{ icon.name }}</span>
+      </div>
+
+      }
+    </div>
+    <span class="place-absolut">
+      I am always happy to learn new technonogies, just tell me what you
+      need.</span
+    >
+  </div>
+</section>

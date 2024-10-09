@@ -1,7 +1,7 @@
 <div #scrollContainer class="scroll-container">
   <app-first-page id="main" [isDesktop]="isDesktop"></app-first-page>
   <app-why-me id="me" [isDesktop]="isDesktop"></app-why-me>
-  <app-skills></app-skills>
+  <app-skills id="skills" *ngIf="isDesktop"></app-skills>
   <app-my-work></app-my-work>
   <app-contact></app-contact>
 </div>

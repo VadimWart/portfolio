@@ -14,7 +14,6 @@ export class BurgerMenuComponent {
   switchLanguage(arg0: string) {
     throw new Error('Method not implemented.');
   }
-  // public translate = inject(TranslateService);
   isSelected: boolean = false;
   constructor(
     public BurgerMenuService: BurgerMenuService,
@@ -37,25 +36,4 @@ export class BurgerMenuComponent {
       }
     });
   }
-
-  //   switchLanguage(language: string) {
-  //     this.translate.use(language);
-
-  //     this.changeLanguageImg(language);
-  //     this.isSelected = !this.isSelected;
-  //   }
-
-  //   changeLanguageImg(language: string) {
-  //     if (language === 'de') {
-  //       this.translationImgService.currentImgMobile = [
-  //         ...this.translationImgService.mobielImgDe,
-  //       ];
-  //     }
-  //     if (language === 'en') {
-  //       this.translationImgService.currentImgMobile = [
-  //         ...this.translationImgService.mobileImgEn,
-  //       ];
-  //     }
-  //     this.BurgerMenuService.close();
-  //   }
 }

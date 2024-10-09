@@ -1,0 +1,78 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  margin-left: 104px;
+  display: flex;
+  margin-top: 482px;
+  align-items: flex-end;
+}
+
+.skills-title {
+  writing-mode: vertical-rl; /* Vertikaler Text */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Dreht den Text um 180 Grad */
+  > h1 {
+    @include neon-text($font-size: 54px);
+    padding: 60px 0px 0px 0px;
+  }
+}
+
+.skill-container {
+  position: relative;
+  min-width: 860px;
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px 42px;
+    max-width: 720px;
+    margin-top: 33px;
+    margin-bottom: 85px;
+
+    img {
+      width: 70px;
+      height: 80px;
+    }
+
+    img:hover {
+      filter: drop-shadow(0 0 15px #b5e93b);
+      transition: filter 355ms ease-out;
+    }
+
+    > div {
+      &:last-child {
+        // display: none;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      @include size(73px, 68px);
+      > span {
+        inline-size: 100px;
+      }
+    }
+  }
+}
+
+.headline {
+  //   margin-right: 43px;
+  //   margin-bottom: 61px;
+  //   margin-left: 104px;
+}
+
+span {
+  font-size: 18px;
+}
+
+.place-absolut {
+  position: absolute;
+  right: 95px;
+  top: 210px;
+  inline-size: 215px;
+}
+
+.arrow {
+  margin-bottom: 70px;
+}
