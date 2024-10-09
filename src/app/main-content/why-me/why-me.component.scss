@@ -3,7 +3,7 @@
 @import "./../../../mixins.scss";
 
 section {
-  padding-top: 80px;
+  //   padding-top: 80px;
   @include desktopUp900 {
     display: flex;
     min-width: 835px;
@@ -14,29 +14,42 @@ section {
   }
 }
 
-div {
-  @include desktopUp900 {
-    padding: 0;
-  }
-  padding: 0 26px;
-  font-size: 16px;
-}
+// div {
+//   @include desktopUp900 {
+//     padding: 0;
+//   }
+//   padding: 0 26px;
+//   font-size: 16px;
+// }
 
 .why-me-title {
   writing-mode: vertical-rl; /* Vertikaler Text */
   text-orientation: mixed;
   transform: rotate(180deg); /* Dreht den Text um 180 Grad */
-  > h1 {
+  > h2 {
     @include neon-text($font-size: 54px);
     padding: 230px 0px 0px 0px;
   }
 }
 
+.why-me-title-mobile {
+  > h2 {
+    @include neon-text($font-size: 32px);
+  }
+}
+
 .why-me-icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 100px;
-  padding-left: 100px;
+  padding: 0px;
+  display: block;
+}
+
+.why-me-icons-mobile {
+  @include desktopUp900 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    padding-left: 100px;
+  }
 }
 
 .icon-container {
@@ -81,7 +94,7 @@ div {
 }
 
 .i-am-section {
-  h2 {
+  h3 {
     font-size: 32px;
     font-weight: 700;
     color: $green-color;
@@ -115,20 +128,6 @@ div {
   }
 }
 
-// .hover-image {
-//   width: 100%;
-//   height: auto;
-//   position: absolute;
-//   top: 0;
-//   left: -3px;
-//   transition: opacity 75ms ease-out;
-
-//   @include desktopUp900 {
-//     width: unset;
-//     left: unset;
-//   }
-// }
-
 .top-center {
   top: 10px;
 }
@@ -159,6 +158,7 @@ div {
 
 .mobile-txt {
   display: block;
+  padding: 6px 10px;
   @include desktopUp900 {
     display: none;
   }
@@ -181,19 +181,6 @@ div {
     flex-direction: row-reverse;
   }
 }
-
-// .mobile-img {
-//   @include desktopUp900 {
-//     display: none;
-//   }
-// }
-
-// .desktop-img {
-//   display: none;
-//   @include desktopUp900 {
-//     display: block;
-//   }
-// }
 
 .contact-me-btn {
   display: flex;
