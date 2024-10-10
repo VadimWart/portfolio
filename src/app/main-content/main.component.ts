@@ -16,6 +16,7 @@ import { Router } from '@angular/router';
 import { ScrollService } from './services/scroll-service';
 import { debounceTime, fromEvent } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 
 @Component({
   selector: 'app-main',
@@ -27,6 +28,7 @@ import { CommonModule } from '@angular/common';
     MyWorkComponent,
     WhyMeComponent,
     FirstPageComponent,
+    SkillsMobileComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

@@ -1,0 +1,67 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  padding: 10px;
+  p {
+    margin: 24px 0;
+  }
+}
+
+.skills-title-mobile {
+  > h1 {
+    @include neon-text($font-size: 32px);
+  }
+}
+
+.icon-line {
+  @include flexBox(flex, center, center);
+  gap: 32px 50px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  img {
+    width: 60px;
+    height: 70px;
+  }
+  img:hover {
+    filter: drop-shadow(0 0 15px #b5e93b);
+    transition: filter 455ms ease-out;
+  }
+  div {
+    @include size(60px, 60px);
+
+    p {
+      display: none;
+      margin: 0;
+    }
+    &:nth-child(11) p {
+      display: block;
+      color: #fffdfd;
+      width: 120px;
+      margin-left: -50%;
+    }
+  }
+}
+
+span {
+  display: flex;
+  padding: 0 24px;
+  margin-bottom: 40px;
+}
+button {
+  background-color: #b5e93b;
+  color: #4a4a4a;
+  border-radius: 30px;
+  @include size(43px, 122px);
+  margin-bottom: 75px;
+  &:hover {
+    background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+  }
+}
+
+.btn-container {
+  @include flexBox(flex, center, center);
+}
