@@ -29,6 +29,7 @@
     "contact": "Kontakt"
   },
   "MYWORK": {
+    "myWorkTitle": "Meine Arbeiten",
     "about": "Task-Manager inspiriert vom Kanban-System, entwickelt zum Erstellen und Organisieren von Aufgaben. Optimale Nutzung durch die Drag and Drop Funktion, die es ermöglicht, Aufgaben einfach zuzuweisen und Kategorien festzulegen.",
     "learned": "Ich habe mir ein breites Spektrum an Fähigkeiten angeeignet. Meine JavaScript-Kenntnisse wurden in Kombination mit Firebase auf die Probe gestellt, was mir eine völlig neue Perspektive auf die Funktionsweise der Programmierung eröffnete. Darüber hinaus habe ich gelernt, mich effektiv in einem Team zu organisieren und Verantwortung für die Einhaltung von Terminen zu übernehmen.",
     "aboutHeadline": "Über das Projekt",
@@ -38,7 +39,7 @@
     "learnedSecond": "Ich habe die Anwendung von objektorientierter Programmierung und klassenbasierter Programmierung erlernt, um ein gut durchdachtes Spiel zu entwickeln, das komplexe Aufgaben wie die Kollisionsabfrage beinhaltet.",
     "currentWorkHeadline": "Aktuelles Projekt",
     "currentWork": "Derzeit arbeite ich an der Entwicklung eines Projekt mit Angular und Typescript.",
-    "button": "Lass uns Reden",
+    "button": "Let´s Talk",
     "showMore": "Mehr Anzeigen",
     "showLess": "Weniger Anzeigen"
   },

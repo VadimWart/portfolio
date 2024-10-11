@@ -5,7 +5,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { BurgerMenuService } from './main-content/services/burger-menu-service';
+import { BurgerMenuService } from './main-content/services/burger-menu.service';
 import { Title } from '@angular/platform-browser';
 import { debounceTime, fromEvent } from 'rxjs';
 

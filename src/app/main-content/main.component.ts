@@ -11,9 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { FirstPageComponent } from './first-page/first-page.component';
-import { BurgerMenuService } from './services/burger-menu-service';
+import { BurgerMenuService } from './services/burger-menu.service';
 import { Router } from '@angular/router';
-import { ScrollService } from './services/scroll-service';
+import { ScrollService } from './services/scroll.service';
 import { debounceTime, fromEvent } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
@@ -45,6 +45,7 @@ export class MainComponent implements AfterViewInit {
   scrollyToX: boolean = false;
   public scrollDistance: boolean = false;
   public burgerMenu = inject(BurgerMenuService);
+  private translate = inject(TranslateService);
 
   constructor(private router: Router, private scrollService: ScrollService) {
     this.updateViewportSize();
@@ -52,7 +53,7 @@ export class MainComponent implements AfterViewInit {
       .pipe(debounceTime(100))
       .subscribe(() => this.updateViewportSize());
   }
-  private translate = inject(TranslateService);
+
   ngAfterViewInit() {
     this.scrollService.getScrollPosition().subscribe((position) => {
       this.scrollContainer.nativeElement.scrollTo({

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, inject, Renderer2 } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
-import { BurgerMenuService } from '../services/burger-menu-service';
+import { BurgerMenuService } from '../services/burger-menu.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../services/translation.service';
 

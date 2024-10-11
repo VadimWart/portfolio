@@ -1,9 +1,11 @@
-<!-- <section>
-  <div class="arrow" (click)="scrollToPosition(2500)">
-    <a href="#myWork"><img src="./assets/img/arrow-right.png" alt="" /></a>
+<section>
+  <div class="arrow" (click)="scrollToPosition(2400)">
+    <a href="#myWork"
+      ><img src="./../../../assets/img/arrow_default.png" alt=""
+    /></a>
   </div>
   <div class="main-headline">
-    <img [src]="translationImgService.deImg[2]" alt="" />
+    <h2>{{ "MYWORK.myWorkTitle" | translate }}</h2>
   </div>
   @for(item of myWork; track item; let i = $index) {
   <div [ngClass]="getClass(i)" class="work-container">
@@ -16,7 +18,7 @@
         <div class="txt-box">
           <div class="sub-headline">
             <img
-              src="./assets/img/bulletpoint25.png
+              src="./../../../assets/img/point.png
           "
               alt=""
             />
@@ -25,7 +27,7 @@
           <span>{{ item.about | translate }}</span>
           <div class="sub-headline">
             <img
-              src="./assets/img/bulletpoint25.png
+              src="./../../../assets/img/point.png
           "
               alt=""
             />
@@ -37,10 +39,10 @@
           <img [src]="item.path" alt="" />
           <div class="btn-wrapper">
             <a target="_blank" [href]="item.git">
-              <button class="git-btn">GitHub</button></a
+              <button class="git-btn transparent-btn">GitHub</button></a
             >
             <a target="_blank" [href]="item.liveTest"
-              ><button class="live-test-btn">Live Test</button></a
+              ><button class="live-test-btn green-btn">Live Test</button></a
             >
           </div>
         </div>
@@ -48,7 +50,7 @@
       <div>
         <div class="sub-headline">
           <img
-            src="./assets/img/bulletpoint25.png
+            src="./../../../assets/img/point.png
         "
             alt=""
           />
@@ -63,17 +65,18 @@
   <div class="height-100">
     <div class="on-going-container">
       <div class="on-going">
-        <img src="./assets/img/3-desktop.png" alt="" />
-        <h3>{{ "MYWORK.currentWorkHeadline" | translate }}</h3>
+        <h3>
+          {{ "MYWORK.currentWorkHeadline" | translate }}
+        </h3>
       </div>
       <span>{{ "MYWORK.currentWork" | translate }}</span>
       <div class="btn-container">
-        <a href="mailto:phillip@phillip-marcel-sauer.com">
-          <button class="live-test-btn">
+        <a href="mailto:#">
+          <button class="live-test-btn green-btn">
             {{ "MYWORK.button" | translate }}
           </button></a
         >
       </div>
     </div>
   </div>
-</section> -->
+</section>

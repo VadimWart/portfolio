@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, inject } from '@angular/core';
 import { BurgerMenuComponent } from '../../main-content/burger-menu/burger-menu.component';
-import { BurgerMenuService } from '../../main-content/services/burger-menu-service';
+import { BurgerMenuService } from '../../main-content/services/burger-menu.service';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
-import { ScrollService } from '../../main-content/services/scroll-service';
+import { ScrollService } from '../../main-content/services/scroll.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -31,6 +31,7 @@
   },
 
   "MYWORK": {
+    "myWorkTitle": "My Work",
     "about": "Task manager inspired by the Kanban system, designed for creating and organizing tasks. Optimal use through the drag-and-drop feature, which allows for easy assignment of tasks and setting of categories",
     "learned": "I gained a wide range of skills. My JavaScript knowledge was put to the test in combination with Firebase, which gave me a completely new perspective on how programming functions. Moreover, I learned how to effectively organize myself within a team and take responsibility for meeting deadlines.",
     "aboutHeadline": "About the Project",

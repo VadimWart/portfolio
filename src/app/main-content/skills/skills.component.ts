@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { IconService } from '../services/icon.service';
-import { ScrollService } from '../services/scroll-service';
+import { ScrollService } from '../services/scroll.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
