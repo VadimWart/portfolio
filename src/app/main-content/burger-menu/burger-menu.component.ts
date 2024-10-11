@@ -2,19 +2,20 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, inject, Renderer2 } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { BurgerMenuService } from '../services/burger-menu-service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
-  imports: [CommonModule, NavbarComponent],
+  imports: [CommonModule, NavbarComponent, TranslateModule],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss',
 })
 export class BurgerMenuComponent {
-  switchLanguage(arg0: string) {
-    throw new Error('Method not implemented.');
-  }
-  isSelected: boolean = false;
+  public translate = inject(TranslateService);
+  public translationService = inject(TranslationService);
+
   constructor(
     public BurgerMenuService: BurgerMenuService,
     private elementRef: ElementRef,

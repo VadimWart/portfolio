@@ -3,6 +3,6 @@
   <app-why-me id="me" [isDesktop]="isDesktop"></app-why-me>
   <app-skills id="skills" *ngIf="isDesktop"></app-skills>
   <app-skills-mobile id="skillsMobile" *ngIf="isMobile"></app-skills-mobile>
-  <app-my-work></app-my-work>
+  <app-my-work *ngIf="isDesktop" id="myWork"></app-my-work>
   <app-contact></app-contact>
 </div>

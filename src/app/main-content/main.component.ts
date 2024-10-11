@@ -17,6 +17,7 @@ import { ScrollService } from './services/scroll-service';
 import { debounceTime, fromEvent } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main',
@@ -51,7 +52,7 @@ export class MainComponent implements AfterViewInit {
       .pipe(debounceTime(100))
       .subscribe(() => this.updateViewportSize());
   }
-
+  private translate = inject(TranslateService);
   ngAfterViewInit() {
     this.scrollService.getScrollPosition().subscribe((position) => {
       this.scrollContainer.nativeElement.scrollTo({

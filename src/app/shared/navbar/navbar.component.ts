@@ -5,11 +5,12 @@ import { BurgerMenuService } from '../../main-content/services/burger-menu-servi
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
 import { ScrollService } from '../../main-content/services/scroll-service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, BurgerMenuComponent, RouterModule],
+  imports: [CommonModule, BurgerMenuComponent, RouterModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -20,8 +21,9 @@ export class NavbarComponent {
   fullStyle: boolean = true;
   showHeader: boolean = false;
   isMainPage: boolean = true;
-  // active: number | null = null;
+  active: number | null = null;
   @Input() isDesktop!: boolean;
+  public translate = inject(TranslateService);
 
   constructor(
     public BurgerMenuService: BurgerMenuService,

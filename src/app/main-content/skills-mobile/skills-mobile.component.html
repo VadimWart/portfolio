@@ -1,12 +1,8 @@
 <section>
   <div class="skills-title-mobile">
-    <h1>My Skill Set</h1>
+    <h1>{{ "SKILLSET.skillsTitle" | translate }}</h1>
   </div>
-  <span>
-    The IT landscape is continuously evolving, with new technologies and
-    methodologies. Staying motivated to expand my IT skills requires a strategic
-    approach, a curious mindset, and a commitment to lifelong learning.</span
-  >
+  <span> {{ "SKILLSET.main" | translate }}</span>
 </section>
 <div class="icon-line">
   @for (icon of icons; track $index) {
@@ -17,9 +13,7 @@
 
   }
 </div>
-<span class="place-absolut">
-  I am always happy to learn new technonogies, just tell me what you need.</span
->
+<span class="place-absolut"> {{ "SKILLSET.main" | translate }}</span>
 <div class="btn-container">
   <a href="mailto:phillip@phillip-marcel-sauer.com"
     ><button>Let´s talk</button>

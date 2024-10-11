@@ -1,0 +1,77 @@
+{
+  "ME": {
+    "WhyMeTitle": "Why me",
+    "WhyMeText": " I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make ma a valuable memberof your team.",
+    "location": "located in Steinfurt",
+    "remote": "open to work remote",
+    "headline": "I am :",
+    "button": "Contact me"
+  },
+  "IMPRINT": {
+    "Title": "Imprint",
+    "Contact": "Contact",
+    "Phone": "Phone",
+    "Source": "Source"
+  },
+  "RESPONSEMESSAGE": {
+    "message": " Thanks for your message. I’ll respond shortly."
+  },
+
+  "SKILLSET": {
+    "skillsTitle": "My Skill Set",
+    "main": "The IT landscape is continuously evolving, with new technologies and methodologies. Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning.",
+    "challange": "I am always happy to learn new technologies."
+  },
+
+  "BURGERMENU": {
+    "whyMe": "Why me",
+    "skills": "My skill set",
+    "myWork": "My work",
+    "contact": "Contact me"
+  },
+
+  "MYWORK": {
+    "about": "Task manager inspired by the Kanban system, designed for creating and organizing tasks. Optimal use through the drag-and-drop feature, which allows for easy assignment of tasks and setting of categories",
+    "learned": "I gained a wide range of skills. My JavaScript knowledge was put to the test in combination with Firebase, which gave me a completely new perspective on how programming functions. Moreover, I learned how to effectively organize myself within a team and take responsibility for meeting deadlines.",
+    "aboutHeadline": "About the Project",
+    "tecHeadline": "Technologies i have used",
+    "learnHedline": "What i have learned",
+    "aboutSecond": "A jump-and-run game inspired by popular titles like Super Mario, implemented using object-oriented programming (OOP). Control Pepe, jump through the level, and defeat the final boss to win!",
+    "learnedSecond": "I learned how to use object-oriented programming and class-based programming to develop a well-designed game that involves complex tasks such as collision detection.",
+    "currentWorkHeadline": "Ongoing Projects",
+    "currentWork": "I am currently working on developing a project with Angular and Typescript.",
+    "button": "Let´s Talk",
+    "showMore": "Show me more",
+    "showLess": "Show me less"
+  },
+  "REFERENCES": {
+    "Salmai": "Vadim proved to be an extremely reliable team member in our group work, always completing his assigned tasks on time and with great care. He was a particularly valuable support for the team when it came to complex JavaScript problems, as he always found a suitable solution and was able to help others when they had difficulties. His ability to master even demanding tasks with confidence contributed significantly to the success of our project.",
+    "Anna": "Vadim made a substantial impact on our group project with his deep knowledge and professional experience in the IT industry, always coming up with innovative solutions to challenges. His commitment and friendly attitude enriched our collaboration and made the experience truly enjoyable.",
+    "Fabian": "Even in difficult situations, Vadim always kept an overview and supported the group with his routine and held it together.",
+    "colleagueDA": "DA Kollege",
+    "colleague": "Kollegin",
+    "mobileHeadline": "Need a teamplayer?",
+    "colleagues": "Here what my colleagues said about me"
+  },
+  "CONTACTFIELD": {
+    "nameField": "Name is required",
+    "emailField": "Email is required",
+    "textareaField": "Message is required",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "policy": "privacy policy",
+    "firstHalfPolicy": "I've read the",
+    "secondHalfPolicy": "and agree to the processing of my data as outlined.",
+    "send": "Send",
+    "errorText": "Please accept the privacy policy.",
+    "mobileHeadlineWorkTogehter": "Let us work together.",
+    "MobileText": "If you are looking for someone for your next project, whether it’s a business app or in another direction, and you value clean code as well as a committed developer who is eager to continuously improve and learn new things, then I am the right person for you."
+  },
+  "PREFOOTERDESKTOP": {
+    "headline": "Let us work together.",
+    "mainText": "If you are looking for someone who writes clean code and is a dedicated developer for your next project - be it a business app or something else entirely - and wants to constantly develop and learn, then I am the right person for you.",
+    "legalNotice": "Imprint",
+    "policy": "Privacy policy"
+  }
+}

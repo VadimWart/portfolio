@@ -6,16 +6,24 @@
 
     <ul *ngIf="isDesktop" class="navigation-line">
       <li>
-        <a href="#whyMe" (click)="scrollToPosition(0)">Why me</a>
+        <a href="#whyMe" (click)="scrollToPosition(0)">{{
+          "BURGERMENU.whyMe" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#skills" (click)="scrollToPosition(1200)">Skills</a>
+        <a href="#skills" (click)="scrollToPosition(1200)">{{
+          "BURGERMENU.skills" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#myWork" (click)="scrollToPosition(2500)">My Work</a>
+        <a href="#myWork" (click)="scrollToPosition(2500)">{{
+          "BURGERMENU.myWork" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#contact" (click)="scrollToPosition(6250)">Contact</a>
+        <a href="#contact" (click)="scrollToPosition(6250)">{{
+          "BURGERMENU.contact" | translate
+        }}</a>
       </li>
     </ul>
   </nav>

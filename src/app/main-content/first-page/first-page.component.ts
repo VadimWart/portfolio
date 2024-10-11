@@ -1,19 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { ScrollService } from '../services/scroll-service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-first-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './first-page.component.html',
   styleUrl: './first-page.component.scss',
 })
 export class FirstPageComponent {
   @Input() scrollToSection!: () => void;
   @Input() scrollContainer!: string;
-
   @Input() isDesktop!: boolean;
+
+  public translate = inject(TranslateService);
+  public translationService = inject(TranslationService);
+
   constructor(private scrollService: ScrollService) {}
 
   scrollToPosition(position: number) {
