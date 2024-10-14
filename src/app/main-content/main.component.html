@@ -8,5 +8,10 @@
     id="myWork"
     [animationOne]="animiationOne"
   ></app-my-work>
+  <app-my-work-mobile
+    id="myWorkMobile"
+    *ngIf="isMobile"
+    [animationMobile]="animiationMobile"
+  ></app-my-work-mobile>
   <app-contact></app-contact>
 </div>

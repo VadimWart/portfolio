@@ -56,14 +56,14 @@ section {
   flex-direction: column;
   @include flexBox(flex, center, none);
   > p {
-    @include text($fs: 18px, $fw: $font-weight-400, $fsn: $font-style-normal);
+    @include text(18px, 400, $font-style-normal);
     margin-top: 10px;
     transition: color 0.3s ease;
     cursor: default;
   }
   &:hover {
     p {
-      @include text($fs: 18px, $fw: $font-weight-400, $fsn: $font-style-normal);
+      @include text(18px, 400, $font-style-normal);
       color: $green-color; // Ändert die Textfarbe beim Hover über den Icon-Container
     }
     .located_icon {

@@ -1,1 +1,90 @@
-<p>my-work-mobile works!</p>
+<header>
+  <div class="main-headline">
+    <h2>{{ "MYWORK.myWorkTitle" | translate }}</h2>
+  </div>
+</header>
+
+@for(item of myWork; track item; let i = $index) {
+<section
+  [ngClass]="getClass(i)"
+  [ngStyle]="
+    isListOpen[i] ? { 'margin-bottom': '0' } : { 'margin-bottom': '40px' }
+  "
+>
+  <div
+    [ngStyle]="{
+      'max-height': isListOpen[i] ? '970px' : '330px',
+      overflow: 'hidden',
+      transition: 'max-height 355ms ease-in-out'
+    }"
+    class="my-work-field"
+  >
+    <div class="header">
+      <img [src]="item.number" alt="" />
+      <h3>{{ item.project }}</h3>
+    </div>
+
+    <div class="work-list">
+      <div class="point">
+        <img src="./../../../assets/img/point.png" alt="" />
+        <div class="info-txt">
+          <h3>{{ "MYWORK.aboutHeadline" | translate }}</h3>
+          <span>{{ item.about | translate }} </span>
+
+          <div
+            [ngStyle]="
+              isListOpen[i] ? { display: 'none' } : { display: 'flex' }
+            "
+            (click)="toggleList(i)"
+            class="show-me"
+          >
+            <span>{{ "MYWORK.showMore" | translate }}</span>
+            <img src="./../../../assets/img/Polygon_Down.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="point">
+        <img src="./../../../assets/img/point.png" alt="" />
+        <div class="info-txt">
+          <h3>{{ "MYWORK.tecHeadline" | translate }}</h3>
+          <span>{{ item.tec | translate }} </span>
+        </div>
+      </div>
+      <div class="point">
+        <img src="./../../../assets/img/point.png" alt="" />
+        <div class="info-txt">
+          <h3>{{ "MYWORK.learnHeadline" | translate }}</h3>
+          <span>{{ item.learned | translate }} </span>
+        </div>
+      </div>
+      <div class="picture-btn-line">
+        <img [src]="item.path" alt="" />
+        <div>
+          <a target="_blank" [href]="item.git">
+            <button class="git-btn transparent-btn">GitHub</button></a
+          >
+          <a target="_blank" [href]="item.liveTest">
+            <button class="live-test-btn green-btn">Live Test</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  [ngStyle]="isListOpen[i] ? { display: 'flex' } : { display: 'none' }"
+  (click)="toggleList(i)"
+  class="show-me-less"
+>
+  <span>{{ "MYWORK.showLess" | translate }}</span>
+  <img src="./../../../assets/img/Polygon_Up.png" alt="" />
+</div>
+}
+<div class="on-going">
+  <div class="on-going-header">
+    <h3>{{ "MYWORK.currentWorkHeadline" | translate }}</h3>
+  </div>
+  <span>{{ "MYWORK.currentWork" | translate }}</span>
+</div>

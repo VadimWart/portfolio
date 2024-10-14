@@ -66,14 +66,18 @@ body {
   color: #4a4a4a;
   margin-bottom: 80px;
   &:hover {
-    background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+    background: linear-gradient(
+      160.33deg,
+      $green-color 50.78%,
+      #547800 133.54%
+    );
   }
 }
 
 .transparent-btn {
   color: white;
   background-color: #b5e93b00;
-  border: 1px solid #b5e93b;
+  border: 1px solid $green-color;
   &:hover {
     background-color: #d3ed9733;
   }
@@ -84,7 +88,7 @@ body {
   // justify-content: flex-end;
   > a {
     &:hover {
-      filter: drop-shadow(0px 0px 4px #b5e93b);
+      filter: drop-shadow(0px 0px 4px $green-color);
     }
   }
 }

@@ -9,6 +9,11 @@ section {
   }
 }
 
+span {
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .skills-title-mobile {
   > h1 {
     @include neon-text($font-size: 32px);
@@ -27,7 +32,7 @@ section {
     height: 70px;
   }
   img:hover {
-    filter: drop-shadow(0 0 15px #b5e93b);
+    filter: drop-shadow(0 0 15px $green-color);
     transition: filter 455ms ease-out;
   }
   div {
@@ -39,26 +44,29 @@ section {
     }
     &:nth-child(11) p {
       display: block;
-      color: #fffdfd;
+      color: $white-color;
       width: 120px;
       margin-left: -50%;
     }
   }
 }
 
-span {
-  display: flex;
-  padding: 0 24px;
-  margin-bottom: 40px;
+.place-absolut {
+  padding: 0 10px;
 }
+
 button {
-  background-color: #b5e93b;
-  color: #4a4a4a;
+  background-color: $green-color;
+  color: $gray-color;
   border-radius: 30px;
   @include size(43px, 122px);
   margin-bottom: 75px;
   &:hover {
-    background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+    background: linear-gradient(
+      160.33deg,
+      $green-color 50.78%,
+      #547800 133.54%
+    );
   }
 }
 

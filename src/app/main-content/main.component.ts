@@ -18,6 +18,7 @@ import { debounceTime, fromEvent } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { TranslateService } from '@ngx-translate/core';
+import { MyWorkMobileComponent } from './my-work-mobile/my-work-mobile.component';
 
 @Component({
   selector: 'app-main',
@@ -25,11 +26,12 @@ import { TranslateService } from '@ngx-translate/core';
   imports: [
     CommonModule,
     SkillsComponent,
+    SkillsMobileComponent,
     ContactComponent,
     MyWorkComponent,
+    MyWorkMobileComponent,
     WhyMeComponent,
     FirstPageComponent,
-    SkillsMobileComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
