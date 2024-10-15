@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer-mobile.component';
+import { FooterComponent } from './shared/footer-mobile/footer-mobile.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { BurgerMenuService } from './main-content/services/burger-menu.service';
