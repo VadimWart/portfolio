@@ -1,0 +1,83 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  font-size: 18px;
+  height: calc(100vh - 17px);
+  gap: 23px;
+  padding-left: 45px;
+}
+
+header {
+  color: #d3ed97;
+}
+
+.wrapper {
+  @include size(665px, 417px);
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #fffdfd;
+}
+
+.hover-effect-mail {
+  display: flex;
+  justify-content: right;
+  gap: 18px;
+  align-items: center;
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(6%) saturate(2007%)
+      hue-rotate(29deg) brightness(100%) contrast(96%);
+  }
+  &:active {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(76%) saturate(1231%)
+      hue-rotate(18deg) brightness(100%) contrast(83%);
+    text-decoration: underline;
+  }
+}
+
+footer {
+  background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+  @include size(102%, 100px);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 158px;
+}
+
+.pad-info-box {
+  padding-bottom: 32px;
+}
+
+.arrow {
+  transform: rotateZ(180deg);
+}
+
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 158px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: end;
+  a {
+    cursor: pointer;
+    &:hover {
+      color: #d3ed97;
+    }
+  }
+}

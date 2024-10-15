@@ -20,6 +20,8 @@ import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { TranslateService } from '@ngx-translate/core';
 import { MyWorkMobileComponent } from './my-work-mobile/my-work-mobile.component';
 import { ReferencesComponent } from './references/references.component';
+import { FooterComponent } from '../shared/footer/footer.component';
+import { InFrontFooterComponent } from './in-front-footer/in-front-footer.component';
 
 @Component({
   selector: 'app-main',
@@ -34,6 +36,8 @@ import { ReferencesComponent } from './references/references.component';
     WhyMeComponent,
     FirstPageComponent,
     ReferencesComponent,
+    FooterComponent,
+    InFrontFooterComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

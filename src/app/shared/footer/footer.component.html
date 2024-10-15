@@ -1,1 +1,15 @@
-<p>footer works!</p>
+<footer
+  [ngClass]="{
+    'show-footer': ShowFooter,
+    'show-privacy-footer': showPrivacyFooter
+  }"
+>
+  <a href="#main"><img src="./../../../assets/img/logo130.svg" alt="" /> </a>
+  <div class="notice-block">
+    <span>&copy; Vadim Wart 2024</span>
+    <div>
+      <a [routerLink]="['/imprint']"> <span> Legal notice</span></a>
+      <a [routerLink]="['/privacy']"><span> Privacy policy </span></a>
+    </div>
+  </div>
+</footer>

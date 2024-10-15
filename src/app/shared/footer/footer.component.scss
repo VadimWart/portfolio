@@ -1,0 +1,54 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+footer {
+  @include flexBox(flex, center, center);
+  flex-direction: column;
+  background: linear-gradient(160.33deg, $green-color 50.78%, #547800 133.54%);
+  width: 100%;
+  color: $gray-color;
+  gap: 4px;
+
+  img {
+    @include size(80px, 80px);
+  }
+  @include desktopUp900 {
+    display: none;
+  }
+}
+
+.show-footer {
+  position: absolute;
+  bottom: 0;
+  @include desktopUp900 {
+    display: flex;
+  }
+}
+
+.show-privacy-footer {
+  display: flex;
+}
+
+.notice-block {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    span {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $gray-color;
+}

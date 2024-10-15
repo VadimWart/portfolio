@@ -1,0 +1,40 @@
+<section>
+  <div class="wrapper">
+    <div class="pad-info-box">
+      <header>
+        <h4>{{ "PREFOOTERDESKTOP.headline" | translate }}</h4>
+      </header>
+      <span> {{ "PREFOOTERDESKTOP.mainText" | translate }} </span>
+    </div>
+    <div class="contact-info">
+      <div class="hover-effect-mail">
+        <img src="./../../../assets/img/email.png" alt="" />
+        <a href="mailto:#">E-mail:wartvadim&#64;gmail.com</a>
+      </div>
+      <div class="hover-effect-mail">
+        <img src="./../../../assets/img/phone.png" alt="" /><a
+          href="tel:017680159896"
+          >Tel:017680159896</a
+        >
+      </div>
+    </div>
+    <div class="copyright-container">
+      <div class="arrow">
+        <a href="#main">
+          <img src="./../../../assets/img/arrow_default.png" alt="" />
+        </a>
+      </div>
+      <div class="copyright">
+        <a [routerLink]="['/imprint']"
+          >{{ "PREFOOTERDESKTOP.legalNotice" | translate }}
+        </a>
+        <a [routerLink]="['/privacy']"
+          >{{ "PREFOOTERDESKTOP.policy" | translate }}
+        </a>
+        <span>&copy; Vadim Wart 2024 </span>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</section>
