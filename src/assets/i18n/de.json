@@ -53,6 +53,7 @@
     "colleagues": "Hier sehen Sie , was meine Kollegen über mich sagen."
   },
   "CONTACTFIELD": {
+    "contactfieldTitle": "Kontaktiere mich",
     "nameField": "Name ist erforderlich",
     "emailField": "Email ist erforderlich",
     "textareaField": "Nachricht ist erforderlich",
@@ -67,6 +68,11 @@
     "mobileHeadlineWorkTogehter": "Lass uns zusammenarbeiten.",
     "MobileText": "Wenn ihr jemanden für euer nächstes Projekt sucht, sei es eine Business-App oder in einer anderen Richtung, und Wert auf Clean Code legt sowie auf einen engagierten Entwickler, der bereit ist, sich stetig weiterzuentwickeln und Neues zu lernen, dann bin ich genau der Richtige für euch."
   },
+
+  "MESSAGE": {
+    "alert": "Vielen Dank für Ihre Nachricht. Ich werde in Kürze antworten."
+  },
+
   "PREFOOTERDESKTOP": {
     "headline": "Lass uns zusammenarbeiten.",
     "mainText": "Wenn Sie für Ihr nächstes Projekt – sei es eine Geschäfts-App oder etwas ganz anderes – jemanden suchen, der sauberen Code schreibt und als Entwickler engagiert ist und sich ständig weiterentwickeln und dazulernen möchte, dann bin ich genau der Richtige für euch.",

@@ -10,7 +10,6 @@
   @for(item of myWork; track item; let i = $index) {
   <div [ngClass]="getClass(i)" class="work-container">
     <div class="headline">
-      <img [src]="item.numberDesktop" alt="" />
       <h1>{{ item.project }}</h1>
     </div>
     <div class="main-container">

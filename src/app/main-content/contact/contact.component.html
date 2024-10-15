@@ -1,1 +1,150 @@
-<p>contact works!</p>
+<section>
+  <div class="wrapper-content">
+    <div *ngIf="!isDesktop" class="pad-info-box">
+      <header>
+        <h2>{{ "CONTACTFIELD.contactfieldTitle" | translate }}</h2>
+        <h4>{{ "CONTACTFIELD.mobileHeadlineWorkTogehter" | translate }}</h4>
+      </header>
+      <span>{{ "CONTACTFIELD.MobileText" | translate }}</span>
+    </div>
+    <div *ngIf="!isDesktop" class="contact-info">
+      <div class="hover-effect-mail">
+        <img src="./../../../assets/img/email.png" alt="" />
+        <a href="mailto:example@example.com">E-mail:wartvadim&#64;gmail.com</a>
+      </div>
+      <div class="hover-effect-mail">
+        <img src="./../../../assets/img/phone.png" alt="" /><a href="tel:"
+          >Tel:017680159896</a
+        >
+      </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <label for="name"></label>
+      <input
+        required
+        [(ngModel)]="contactData.name"
+        autocomplete="off"
+        type="text"
+        id="name"
+        [placeholder]="
+          nameInput.invalid && nameInput.touched
+            ? ('CONTACTFIELD.nameField' | translate)
+            : ('CONTACTFIELD.name' | translate)
+        "
+        [ngClass]="{ 'invalid-input': nameInput.invalid && nameInput.touched }"
+        name="name"
+        #nameInput="ngModel"
+        minlength="3"
+        (input)="validateName($event.target)"
+      />
+      <label for="email"></label>
+      <input
+        required
+        [(ngModel)]="contactData.email"
+        autocomplete="off"
+        type="email"
+        id="email"
+        placeholder="Your Email"
+        name="email"
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        [placeholder]="
+          emailInput.invalid && emailInput.touched
+            ? ('CONTACTFIELD.emailField' | translate)
+            : ('CONTACTFIELD.email' | translate)
+        "
+        [ngClass]="{
+          'invalid-input': emailInput.invalid && emailInput.touched
+        }"
+        #emailInput="ngModel"
+      />
+      <textarea
+        required
+        [(ngModel)]="contactData.message"
+        autocomplete="off"
+        name="message"
+        id="message"
+        placeholder="Your message"
+        [placeholder]="
+          messageInput.invalid && messageInput.touched
+            ? ('CONTACTFIELD.textareaField' | translate)
+            : ('CONTACTFIELD.message' | translate)
+        "
+        [ngClass]="{
+          'invalid-input': messageInput.invalid && messageInput.touched
+        }"
+        #messageInput="ngModel"
+      ></textarea>
+      <div class="policy">
+        <div>
+          <div class="checkbox-container">
+            <img
+              class="hover-image normal"
+              (click)="policyTrue()"
+              [src]="imageSrc"
+              alt=""
+            />
+            <div class="placetaker"></div>
+            @if(imageSrc == './../../../assets/img/checkbox_default.png') {
+            <img
+              class="hover-image hover"
+              (click)="policyTrue()"
+              src="./../../../assets/img/checkbox_default_hover.png"
+              alt=""
+            />
+            }@else if(imageSrc == './../../../assets/img/checked_box.png') {
+            <img
+              class="hover-image hover hover-size"
+              (click)="policyTrue()"
+              src="./../../../assets/img/checked_box.png"
+              alt=""
+            />
+            } @else {
+            <img
+              class="hover-image hover hover-size"
+              (click)="policyTrue()"
+              src="./../../../assets/img/checked_box_error.png"
+              alt=""
+            />
+            }
+          </div>
+          <span
+            >{{ "CONTACTFIELD.firstHalfPolicy" | translate }}
+            <a class="privacy-policy" [routerLink]="['/privacy']">{{
+              "CONTACTFIELD.policy" | translate
+            }}</a>
+            {{ "CONTACTFIELD.secondHalfPolicy" | translate }}
+          </span>
+        </div>
+
+        <span class="d-none" [ngClass]="{ 'active-error': errorTxt }">{{
+          "CONTACTFIELD.errorText" | translate
+        }}</span>
+      </div>
+
+      <div class="btn-container">
+        <button
+          class="submit-btn"
+          type="submit"
+          name=""
+          value=""
+          [ngClass]="{
+            'active-submit-btn':
+              messageInput.valid &&
+              emailInput.valid &&
+              nameInput.valid &&
+              privacyPolicy
+          }"
+        >
+          {{ "CONTACTFIELD.send" | translate }}
+        </button>
+      </div>
+    </form>
+    <div class="headline-contact" *ngIf="isDesktop">
+      <h2>{{ "CONTACTFIELD.contactfieldTitle" | translate }}</h2>
+    </div>
+  </div>
+  <app-message-response
+    [ngClass]="{ 'fade-in': isMessageOut, 'd-none': !isMessageOut }"
+  ></app-message-response>
+</section>

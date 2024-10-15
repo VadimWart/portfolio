@@ -1,0 +1,20 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+.wrapper2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  height: 150px;
+
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.container2 {
+  @include flexBox(flex, center, center);
+  background-color: hsla(78, 80%, 57%, 0.2);
+  border-radius: 10px;
+}

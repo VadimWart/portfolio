@@ -59,7 +59,7 @@ body {
 }
 
 .green-btn {
-  @include size(43px, 135px);
+  @include size(40px, 135px);
   border-style: unset;
   background-color: $green-color;
   border-radius: 30px;

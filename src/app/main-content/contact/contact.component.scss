@@ -1,0 +1,265 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  padding-top: 80px;
+  @include desktopUp900 {
+    display: flex;
+    margin-right: 56px;
+    margin-left: 104px;
+    align-items: flex-end;
+    margin-top: 15px;
+    padding-top: 0;
+  }
+}
+
+h2 {
+  @include neon-text($font-size: 32px);
+}
+
+h4 {
+  color: #d3ed97;
+}
+
+.pad-info-box {
+  padding: 0 25px 0 26px;
+  margin-bottom: 24px;
+  > header img {
+    width: 190px;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px 24px 20px;
+  div {
+    @include flexBox(flex, center, unset);
+    gap: 10px;
+    &:last-child {
+      margin-left: 8px;
+    }
+  }
+  img {
+    cursor: pointer;
+  }
+}
+
+form {
+  @include flexBox(flex, center, unset);
+  flex-direction: column;
+  gap: 16px;
+  input:not(.submit-btn),
+  textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid $green-color;
+    border-radius: 30px;
+
+    &::placeholder {
+      opacity: 40%;
+      color: #d3ed97;
+    }
+  }
+  input:not(.submit-btn) {
+    padding: 21px 26px;
+    min-width: 270px;
+    @include mobile360 {
+      min-width: 241px;
+    }
+    @include desktopUp900 {
+      width: 456px;
+    }
+  }
+  textarea {
+    padding: 30px 24px;
+    min-width: 274px;
+    min-height: 255px;
+    @include mobile360 {
+      min-width: 245px;
+    }
+    @include desktopUp900 {
+      width: 456px;
+      height: 194px;
+    }
+  }
+  span {
+    font-size: 14px;
+    color: $green-color;
+    @include mobile360 {
+      font-size: 12px;
+    }
+  }
+  img {
+    @include size(24px, 24px);
+  }
+}
+
+input,
+textarea {
+  border-style: none;
+  color: $white-color;
+}
+input:focus,
+textarea:focus {
+  border-color: $green-color; /* Verhindert das Ändern der border-Farbe */
+  outline: none;
+  caret-color: $green-color;
+}
+
+.invalid-input {
+  border-color: #fd2e12 !important;
+  outline: none;
+  caret-color: #fd2e12;
+  &::placeholder {
+    color: #fd2e12 !important;
+  }
+  &:focus {
+    border-color: #fd2e12;
+    outline: none;
+    caret-color: #fd2e12;
+  }
+}
+
+.submit-btn {
+  @include size(40px, 100px);
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  padding: 12px 17px;
+  border-radius: 30px;
+  background-color: $gray-color;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  &:hover {
+    color: #241c15;
+    background-color: #d9d7cd;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 32px;
+  width: 100%;
+}
+
+.policy {
+  display: flex;
+  gap: 6px;
+  padding: 0 38px 0 35px;
+  flex-direction: column;
+  > div {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  > span {
+    padding-left: 30px;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.active-error {
+  color: #fd2e12 !important;
+  display: flex;
+}
+
+.active-submit-btn {
+  background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+  color: #252525;
+}
+
+.checkbox-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 75ms ease-out;
+}
+
+.hover-image.hover {
+  opacity: 0;
+}
+
+.checkbox-container:hover .hover {
+  opacity: 1;
+}
+
+.checkbox-container:hover + .txt-with-icon {
+  color: $green-color !important;
+}
+
+.checkbox-container:hover .normal {
+  opacity: 0;
+}
+
+.placetaker {
+  @include size(24px, 24px);
+}
+
+.hover-size {
+  transform: scale(1.1);
+}
+
+.hover-effect-mail {
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(6%) saturate(2007%)
+      hue-rotate(29deg) brightness(100%) contrast(96%);
+  }
+  &:active {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(76%) saturate(1231%)
+      hue-rotate(18deg) brightness(100%) contrast(83%);
+    text-decoration: underline;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $white-color;
+}
+
+.headline-contact {
+  margin-bottom: 300px;
+  writing-mode: vertical-rl; /* Vertikaler Text */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Dreht den Text um 180 Grad */
+  > h2 {
+    @include neon-text($font-size: 54px);
+  }
+}
+
+.wrapper-content {
+  @include desktopUp900 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.privacy-policy {
+  color: $white-color;
+  text-decoration: none;
+}
