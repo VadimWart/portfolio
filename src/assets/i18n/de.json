@@ -44,10 +44,11 @@
     "showLess": "Weniger Anzeigen"
   },
   "REFERENCES": {
+    "rederencesTitle": "Referenzen",
     "Salmai": "Vadim hat sich in unserer Gruppenarbeit als äußerst zuverlässiger Teamkollege erwiesen, der seine zugeteilten Aufgaben stets termingerecht und mit großer Sorgfalt erledigte. Besonders bei komplexen JavaScript-Problemen war er eine wertvolle Unterstützung für das Team, da er immer eine passende Lösung fand und anderen bei Schwierigkeiten weiterhelfen konnte. Seine Fähigkeit, auch anspruchsvolle Aufgaben souverän zu meistern, hat entscheidend zum Erfolg unseres Projekts beigetragen.",
     "Anna": "Vadim hat mit seinem umfassenden Wissen und seiner Berufserfahrung in der IT-Branche unser Gruppenprojekt maßgeblich beeinflusst und immer wieder innovative Lösungen für Herausforderungen gefunden. Sein Engagement und seine freundliche Art haben unsere Zusammenarbeit bereichert und die Erfahrung wirklich angenehm gemacht.",
     "Fabian": "Vadim hat auch in schwierigen Situationen stets den Überblick behalten und die Gruppe mit seiner Routine unterstützt und zusammengehalten.",
-    "colleagueDA": "DA Kollege",
+    "TeamPartner": "Team Partner",
     "mobileHeadline": "Brauchen Sie einen Teamplayer",
     "colleagues": "Hier sehen Sie , was meine Kollegen über mich sagen."
   },

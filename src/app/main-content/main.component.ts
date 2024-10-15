@@ -19,6 +19,7 @@ import { CommonModule } from '@angular/common';
 import { SkillsMobileComponent } from './skills-mobile/skills-mobile.component';
 import { TranslateService } from '@ngx-translate/core';
 import { MyWorkMobileComponent } from './my-work-mobile/my-work-mobile.component';
+import { ReferencesComponent } from './references/references.component';
 
 @Component({
   selector: 'app-main',
@@ -32,6 +33,7 @@ import { MyWorkMobileComponent } from './my-work-mobile/my-work-mobile.component
     MyWorkMobileComponent,
     WhyMeComponent,
     FirstPageComponent,
+    ReferencesComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

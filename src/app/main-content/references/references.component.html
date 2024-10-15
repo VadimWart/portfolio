@@ -1,1 +1,32 @@
-<p>references works!</p>
+<section>
+  <header *ngIf="!isDesktop">
+    <h3>{{ "REFERENCES.mobileHeadline" | translate }}</h3>
+    <span>{{ "REFERENCES.colleagues" | translate }}</span>
+  </header>
+
+  <div class="arrow">
+    <a (click)="scrollToPosition(6250)" *ngIf="isDesktop"
+      ><img src="./../../../assets/img/arrow_default.png" alt=""
+    /></a>
+  </div>
+  <div class="headline-references" *ngIf="isDesktop">
+    <h2>{{ "REFERENCES.rederencesTitle" | translate }}</h2>
+  </div>
+  <div class="wrapper">
+    <div #refContainer class="ref-container">
+      @for(ref of referencesTxt; track $index) {
+      <div class="references">
+        <span>{{ ref.txt | translate }}</span>
+        <div class="seperator"></div>
+        <div>
+          <h3>{{ ref.name }}</h3>
+          <span class="project">{{ ref.proj | translate }}</span>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  <div *ngIf="!isDesktop" class="carousel">
+    <img [src]="currentCarousel" alt="" />
+  </div>
+</section>

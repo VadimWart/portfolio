@@ -1,0 +1,100 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  @include desktopUp900 {
+    display: flex;
+    align-items: flex-end;
+    // margin-top: 239px;
+    // margin-left: 104px;
+  }
+}
+
+header {
+  h3 {
+    color: $green-color;
+    font-size: 22px;
+  }
+  padding: 60px 26px 0 26px;
+  margin-bottom: 40px;
+}
+
+.references {
+  border: solid 1px #d3ed97;
+  border-radius: 30px;
+  min-height: 250px;
+  min-width: 500px;
+  @include desktopUp900 {
+    // min-height: 182px;
+    // min-width: 478px;
+    min-height: 250px;
+    min-width: 800px;
+  }
+
+  @include flexBox(flex, center, center);
+  gap: 8px;
+
+  .seperator {
+    background-color: #d3ed97;
+    width: 1px;
+    height: 128px;
+    margin-right: 14px;
+  }
+  span {
+    font-size: 13px;
+    max-width: 300px;
+    @include desktopUp900 {
+      font-size: 18px;
+      //   max-width: 253px;
+      max-width: 600px;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    color: $green-color;
+    margin: 0;
+    max-width: 120px;
+  }
+}
+
+.carousel {
+  @include flexBox(flex, center, center);
+  margin-top: 18px;
+  margin-bottom: 80px;
+}
+
+.ref-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  max-width: 372px;
+  @include desktopUp900 {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 16px;
+    max-width: unset;
+  }
+}
+.project {
+  color: #d3ed97;
+}
+
+.headline-references {
+  //   margin-right: 40px;
+  //   margin-left: 104px;
+  writing-mode: vertical-rl; /* Vertikaler Text */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Dreht den Text um 180 Grad */
+  > h2 {
+    @include neon-text($font-size: 54px);
+    // padding: 430px 0px 0px 0px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
