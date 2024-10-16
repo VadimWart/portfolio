@@ -1,0 +1,15 @@
+@import "./../../fonts.scss";
+@import "./../../../media_query.scss";
+@import "./../../../mixins.scss";
+
+section {
+  padding: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  @include desktopUp900 {
+    padding-left: 190px;
+  }
+}
+a {
+  color: $green-color;
+}
