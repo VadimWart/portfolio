@@ -50,7 +50,7 @@ export class ContactComponent {
   mailTest = true;
 
   post = {
-    endPoint: '#',
+    endPoint: 'https://vadim-wart.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
