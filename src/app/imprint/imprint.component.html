@@ -1,1 +1,26 @@
-<p>imprint works!</p>
+<section>
+  <div class="lang-select">
+    <span (click)="translationService.switchLanguage('de')">DE</span>
+    <div class="seperator"></div>
+    <span (click)="translationService.switchLanguage('en')">EN</span>
+  </div>
+  <div class="wrapper">
+    <h1>{{ "IMPRINT.Title" | translate }}</h1>
+    <p>
+      Vadim Wart<br />
+      Otto-Hahn-Str. 11<br />
+      48565 Steinfurt
+    </p>
+    <h2>{{ "IMPRINT.Contact" | translate }}</h2>
+    <p>
+      {{ "IMPRINT.Phone" | translate }} 017680159896<br />
+      E-Mail: wartvadim&commat;gmail.com
+    </p>
+    <p>
+      {{ "IMPRINT.Source" | translate }}:
+      <a href="https://www.e-recht24.de/impressum-generator.html"
+        >https://www.e-recht24.de/impressum- generator.html</a
+      >
+    </p>
+  </div>
+</section>

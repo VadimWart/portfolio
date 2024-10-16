@@ -21,7 +21,9 @@ import { TranslateService } from '@ngx-translate/core';
 import { MyWorkMobileComponent } from './my-work-mobile/my-work-mobile.component';
 import { ReferencesComponent } from './references/references.component';
 import { FooterComponent } from '../shared/footer/footer.component';
+import { InFrontFooterMobileComponent } from './in-front-footer-mobile/in-front-footer-mobile.component';
 import { InFrontFooterComponent } from './in-front-footer/in-front-footer.component';
+import { ImprintComponent } from '../imprint/imprint.component';
 
 @Component({
   selector: 'app-main',
@@ -37,7 +39,9 @@ import { InFrontFooterComponent } from './in-front-footer/in-front-footer.compon
     FirstPageComponent,
     ReferencesComponent,
     FooterComponent,
+    InFrontFooterMobileComponent,
     InFrontFooterComponent,
+    ImprintComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

@@ -21,7 +21,7 @@ section {
   }
   h3 {
     font-size: 18px;
-    color: #fffdfd;
+    color: $white-color;
   }
   @include desktopUp900 {
     width: 100vw;
@@ -103,7 +103,7 @@ section {
 .seperator {
   width: 2px;
   height: 22px;
-  background: #fffdfd;
+  background: $white-color;
 }
 
 .links {
@@ -176,14 +176,14 @@ section {
 .animation-wrapper-second-name {
   transform: translateY(50px);
   opacity: 0;
-  animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
+  animation: slideUp 1s ease-out forwards;
   animation-delay: 1s;
 }
 
 .animation-wrapper-frontend {
   transform: translateY(50px);
   opacity: 0;
-  animation: slideUp 1s ease-out forwards; /* Animation für den Vornamen */
+  animation: slideUp 1s ease-out forwards;
   animation-delay: 1.5s;
   > span {
     @include neon-text();

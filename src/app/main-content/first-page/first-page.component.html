@@ -4,9 +4,17 @@
     <div class="wrapper">
       <div class="person-pic">
         <div *ngIf="isDesktop" class="icons links">
-          <a href="#"><div class="email-icon"></div></a>
-          <a href="#"><div class="linkedin-icon"></div></a>
-          <a href="#"><div class="git-icon"></div></a>
+          <a href="mailto:wartvadim@gmail.com"
+            ><div class="email-icon"></div
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/vadim-wart-a4564a32a"
+            target="_blank"
+            ><div class="linkedin-icon"></div
+          ></a>
+          <a href="https://github.com/VadimWart" target="_blank"
+            ><div class="git-icon"></div
+          ></a>
           <div class="lang-select language">
             <span (click)="translationService.switchLanguage('de')">DE</span>
             <div class="seperator"></div>

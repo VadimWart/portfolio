@@ -4,9 +4,9 @@ import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-in-front-footer',
   standalone: true,
-  imports: [CommonModule, RouterLink, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterLink],
   templateUrl: './in-front-footer.component.html',
   styleUrl: './in-front-footer.component.scss',
 })
