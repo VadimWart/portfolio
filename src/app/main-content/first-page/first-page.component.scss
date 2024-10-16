@@ -39,7 +39,7 @@ section {
   opacity: 80%;
   position: fixed;
   border-radius: 8px;
-  top: 73px;
+  top: 70px;
   @include desktopUp900 {
     display: none;
   }
@@ -48,16 +48,17 @@ section {
 .person-pic {
   background-image: url("../../../assets/img/Photo.png");
   @include size(400px, 310px);
-  background-position: bottom; /* Zentriert das Bild im Container */
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 75px;
+  margin-top: 74px;
 
   @include mobile360 {
-    width: 303px;
+    width: 300px;
   }
+
   @include desktopUp900 {
     @include size(100vh, 1000px);
     background-size: cover;
@@ -74,7 +75,7 @@ section {
 }
 
 .front {
-  @include size(361px, 100%);
+  @include size(360px, 100%);
   @include flexBox(flex, center, center);
   flex: 1;
   flex-direction: column;

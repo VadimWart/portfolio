@@ -4,7 +4,7 @@
 
 .work-container {
   background-color: hsla(78, 80%, 57%, 0.2);
-  max-width: 919px;
+  max-width: 920px;
   border-radius: 30px;
   transform: translateY(150px);
   opacity: 0;
@@ -57,7 +57,7 @@ section {
     @include size(13px, 13px);
   }
   > h3 {
-    color: #fffdfd;
+    color: $white-color;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 16px;
@@ -98,7 +98,7 @@ span {
   margin-top: 30px;
   gap: 27px;
   > img {
-    @include size(203px, 337px);
+    @include size(204px, 338px);
     border-radius: 30px;
     filter: saturate(0.3);
   }
@@ -111,11 +111,11 @@ span {
 }
 
 .git-btn {
-  @include size(43px, 106px);
+  @include size(44px, 106px);
   border-radius: 30px;
 }
 .live-test-btn {
-  @include size(43px, 118px);
+  @include size(44px, 118px);
   border-radius: 30px;
 }
 
@@ -129,7 +129,7 @@ span {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
-  width: 367px;
+  width: 366px;
   button {
     margin-top: 24px;
   }
@@ -140,7 +140,7 @@ span {
   align-items: center;
   gap: 18px;
   > img {
-    @include size(58px, 31px);
+    @include size(58px, 32px);
   }
 
   > h3 {

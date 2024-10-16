@@ -97,6 +97,7 @@ export class ContactComponent {
       this.imageSrc = './../../../assets/img/checked_box_error.png';
     }
   }
+
   responseMessage() {
     this.isMessageOut = true;
     setTimeout(() => {

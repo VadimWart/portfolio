@@ -3,13 +3,13 @@
 @import "./../../../mixins.scss";
 
 .menu {
-  background: linear-gradient(162.05deg, #b5e93b 45.64%, #547800 119.01%);
+  background: linear-gradient(162.05deg, $green-color 45.64%, #547800 119.01%);
   position: fixed;
   top: -400px;
   z-index: 1000;
   width: 100%;
   height: 350px;
-  color: #4a4a4a;
+  color: $gray-color;
   @include flexBox(flex, center, unset);
   flex-direction: column;
   border-bottom-left-radius: 30px;
@@ -19,7 +19,7 @@
 .seperator {
   width: 1px;
   height: 22px;
-  background-color: #4a4a4a;
+  background-color: $gray-color;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
   width: 100%;
   margin-top: 10px;
   margin-right: 4px;
-  cursor: pointer; // animation make for the burger menu when clicked it transition to the next img and than opens after a time also by close;
+  cursor: pointer;
 }
 
 .column {
@@ -55,7 +55,7 @@ a {
 
 a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: $gray-color;
 }
 
 @keyframes flyDown {
@@ -86,7 +86,7 @@ a {
 }
 
 .animate-back {
-  animation: flyback 600ms ease-in-out backwards; /* Wendet die Animation an */
+  animation: flyback 600ms ease-in-out backwards;
 }
 
 .selected {

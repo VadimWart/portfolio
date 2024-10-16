@@ -8,7 +8,7 @@ $font-style-italic: italic;
 $font-style-normal: normal;
 
 // Definiere das Mixin für den transparenten Text mit grünem Umriss
-@mixin neon-text($color: #b5e93b, $stroke-width: 1px, $font-size: 48px) {
+@mixin neon-text($color: $green-color, $stroke-width: 1px, $font-size: 48px) {
   color: transparent; // Transparenter Text
   -webkit-text-stroke: $stroke-width $color; // Textumriss
   font-size: $font-size;
@@ -47,7 +47,7 @@ $font-style-normal: normal;
   }
 }
 
-@mixin dGrid($gr: 0, $gc: 0) {
+@mixin dGrid($gr, $gc) {
   display: grid;
   grid-row: $gr;
   grid-column: $gc;

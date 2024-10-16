@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-in-front-footer',
@@ -10,4 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './in-front-footer.component.html',
   styleUrl: './in-front-footer.component.scss',
 })
-export class InFrontFooterComponent {}
+export class InFrontFooterComponent {
+  public translate = inject(TranslateService);
+}

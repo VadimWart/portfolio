@@ -35,7 +35,7 @@ html {
 body {
   margin: 0;
   font-family: "Quantico";
-  color: #fffdfd;
+  color: $white-color;
   background: linear-gradient(
     179.85deg,
     #000000 9.26%,
@@ -63,7 +63,7 @@ body {
   border-style: unset;
   background-color: $green-color;
   border-radius: 30px;
-  color: #4a4a4a;
+  color: $gray-color;
   margin-bottom: 80px;
   &:hover {
     background: linear-gradient(

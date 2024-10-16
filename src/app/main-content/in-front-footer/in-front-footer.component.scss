@@ -23,7 +23,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #fffdfd;
+  color: $white-color;
 }
 
 .hover-effect-mail {
@@ -43,7 +43,7 @@ a {
 }
 
 footer {
-  background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+  background: linear-gradient(160.33deg, $green-color 50.78%, #547800 133.54%);
   @include size(102%, 100px);
 }
 

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { Component, HostListener, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-in-front-footer-mobile',
@@ -10,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './in-front-footer-mobile.component.scss',
 })
 export class InFrontFooterMobileComponent {
+  public translate = inject(TranslateService);
   isHovered = false;
 
   @HostListener('mouseover')
