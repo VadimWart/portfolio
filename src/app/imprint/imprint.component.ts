@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../main-content/services/translation.service';
 
@@ -11,6 +11,7 @@ import { TranslationService } from '../main-content/services/translation.service
   styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
+  @Input() isDesktop!: boolean;
   public translate = inject(TranslateService);
   public translationService = inject(TranslationService);
 }

@@ -14,6 +14,12 @@ section {
   }
 }
 
+.d-none {
+  @include mobile900 {
+    display: none !important;
+  }
+}
+
 h1 {
   font-size: 48px;
 }

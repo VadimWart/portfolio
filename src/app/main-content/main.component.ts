@@ -109,7 +109,7 @@ export class MainComponent implements AfterViewInit {
   onScrollY(event: WheelEvent) {
     if (this.scrollyToX) {
       event.preventDefault();
-      const scrollSpeed = 3;
+      const scrollSpeed = 8;
       const deltaX = event.deltaY * scrollSpeed;
       this.scrollContainer.nativeElement.scrollBy(deltaX, 0);
     }

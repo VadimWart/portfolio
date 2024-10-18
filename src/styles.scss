@@ -87,9 +87,11 @@ body {
 
 .arrow {
   > a {
-    &:hover {
-      filter: drop-shadow(0px 0px 4px $green-color);
+    img {
       cursor: pointer;
+      &:hover {
+        filter: drop-shadow(0px 0px 4px $green-color);
+      }
     }
   }
 }
