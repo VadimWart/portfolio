@@ -110,9 +110,10 @@ section {
 .links {
   @include flexBox(flex, center, flex-end);
   gap: 16px;
-  margin-top: 35px;
+  margin-top: 20px;
   position: fixed;
   left: clamp(500px, 100vw - 350px, 1100px);
+  z-index: 1000;
   > a img {
     cursor: pointer;
     transition: transform 0.3s ease-in-out; /* Smooth transition for hover */

@@ -9,7 +9,7 @@ header {
   top: 0;
   z-index: 10;
   @include desktopUp900 {
-    @include size(98.5%, 172px);
+    @include size(100%, 172px);
   }
   > nav {
     padding: 10px 20px;
