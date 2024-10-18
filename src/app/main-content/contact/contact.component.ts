@@ -44,7 +44,6 @@ export class ContactComponent {
     if (ngForm.valid && ngForm.submitted && this.privacyPolicy == true) {
       this.phpRequest(ngForm);
       this.responseMessage();
-      console.log(this.contactData);
     } else if (this.privacyPolicy == false) {
       this.imageSrc = './../../../assets/img/checked_box_error.png';
       this.errorTxt = true;

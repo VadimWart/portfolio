@@ -74,7 +74,5 @@ export class ReferencesComponent implements AfterViewInit {
     } else {
       this.currentCarousel = this.carousel[0];
     }
-
-    console.log(`Scroll position: ${scrollLeft}px`);
   }
 }

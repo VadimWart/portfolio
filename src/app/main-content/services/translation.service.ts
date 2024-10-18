@@ -13,7 +13,6 @@ export class TranslationService {
   }
 
   public switchLanguage(language: string) {
-    console.log('Switching language to:', language);
     this.translate.use(language);
   }
 }
