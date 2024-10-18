@@ -24,6 +24,8 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { InFrontFooterMobileComponent } from './in-front-footer-mobile/in-front-footer-mobile.component';
 import { InFrontFooterComponent } from './in-front-footer/in-front-footer.component';
 import { ImprintComponent } from '../imprint/imprint.component';
+import { MessageComponent } from './message/message.component';
+import { NavbarComponent } from '../shared/navbar/navbar.component';
 
 @Component({
   selector: 'app-main',
@@ -42,6 +44,8 @@ import { ImprintComponent } from '../imprint/imprint.component';
     InFrontFooterMobileComponent,
     InFrontFooterComponent,
     ImprintComponent,
+    MessageComponent,
+    NavbarComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

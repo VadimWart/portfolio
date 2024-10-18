@@ -4,11 +4,18 @@ import { Component, inject, Input } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MessageComponent } from '../message/message.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, TranslateModule, FormsModule, RouterLink],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    FormsModule,
+    RouterLink,
+    MessageComponent,
+  ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
