@@ -29,17 +29,14 @@ section {
     max-width: 720px;
     margin-top: 30px;
     margin-bottom: 85px;
-
     img {
       width: 70px;
       height: 80px;
     }
-
     img:hover {
-      filter: drop-shadow(0 0 15px #b5e93b);
+      filter: drop-shadow(0 0 15px $green-color);
       transition: filter 355ms ease-out;
     }
-
     > div {
       display: flex;
       flex-direction: column;

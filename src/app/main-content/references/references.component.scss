@@ -6,8 +6,6 @@ section {
   @include desktopUp900 {
     display: flex;
     align-items: flex-end;
-    // margin-top: 239px;
-    // margin-left: 104px;
   }
 }
 
@@ -26,15 +24,11 @@ header {
   min-height: 250px;
   min-width: 500px;
   @include desktopUp900 {
-    // min-height: 182px;
-    // min-width: 478px;
     min-height: 250px;
     min-width: 800px;
   }
-
   @include flexBox(flex, center, center);
   gap: 8px;
-
   .seperator {
     background-color: #d3ed97;
     width: 1px;
@@ -46,11 +40,9 @@ header {
     max-width: 300px;
     @include desktopUp900 {
       font-size: 18px;
-      //   max-width: 253px;
       max-width: 600px;
     }
   }
-
   h3 {
     font-size: 22px;
     color: $green-color;
@@ -83,14 +75,11 @@ header {
 }
 
 .headline-references {
-  //   margin-right: 40px;
-  //   margin-left: 104px;
   writing-mode: vertical-rl; /* Vertikaler Text */
   text-orientation: mixed;
   transform: rotate(180deg); /* Dreht den Text um 180 Grad */
   > h2 {
     @include neon-text($font-size: 54px);
-    // padding: 430px 0px 0px 0px;
   }
 }
 

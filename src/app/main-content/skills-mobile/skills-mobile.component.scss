@@ -37,7 +37,6 @@ span {
   }
   div {
     @include size(60px, 60px);
-
     p {
       display: none;
       margin: 0;

@@ -36,7 +36,6 @@ header {
   @include flexBox(flex, center, center);
   flex-direction: column;
   gap: 32px;
-
   > div {
     display: flex;
     gap: 6px;
@@ -62,7 +61,6 @@ a {
   0% {
     top: -400px; /* Ausgangsposition */
   }
-
   100% {
     top: 0; /* Endposition innerhalb des Containers */
   }

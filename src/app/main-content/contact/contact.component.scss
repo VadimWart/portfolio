@@ -56,7 +56,6 @@ form {
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid $green-color;
     border-radius: 30px;
-
     &::placeholder {
       opacity: 40%;
       color: #d3ed97;
@@ -101,6 +100,7 @@ textarea {
   border-style: none;
   color: $white-color;
 }
+
 input:focus,
 textarea:focus {
   border-color: $green-color; /* Verhindert das Ändern der border-Farbe */
@@ -173,7 +173,7 @@ textarea:focus {
 }
 
 .active-submit-btn {
-  background: linear-gradient(160.33deg, #b5e93b 50.78%, #547800 133.54%);
+  background: linear-gradient(160.33deg, $green-color 50.78%, #547800 133.54%);
   color: #252525;
 }
 
@@ -255,6 +255,7 @@ a {
     opacity: 1;
   }
 }
+
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
