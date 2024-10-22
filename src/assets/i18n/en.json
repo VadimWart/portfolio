@@ -36,7 +36,7 @@
     "learned": "I gained a wide range of skills. My JavaScript knowledge was put to the test in combination with Firebase, which gave me a completely new perspective on how programming functions. Moreover, I learned how to effectively organize myself within a team and take responsibility for meeting deadlines.",
     "aboutHeadline": "About the Project",
     "tecHeadline": "Technologies i have used",
-    "learnHedline": "What i have learned",
+    "learnHeadline": "What i have learned",
     "aboutSecond": "A jump-and-run game inspired by popular titles like Super Mario, implemented using object-oriented programming (OOP). Control Pepe, jump through the level, and defeat the final boss to win!",
     "learnedSecond": "I learned how to use object-oriented programming and class-based programming to develop a well-designed game that involves complex tasks such as collision detection.",
     "currentWorkHeadline": "Ongoing Projects",

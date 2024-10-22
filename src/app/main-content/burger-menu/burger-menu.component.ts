@@ -20,21 +20,9 @@ export class BurgerMenuComponent {
     public BurgerMenuService: BurgerMenuService,
     private elementRef: ElementRef,
     private renderer: Renderer2
-  ) {
-    this.checkIfClickedOut();
-  }
+  ) {}
 
   toggleMenu() {
     this.BurgerMenuService.toggleMenu();
-  }
-
-  checkIfClickedOut() {
-    this.renderer.listen('window', 'click', (e: Event) => {
-      if (this.BurgerMenuService.menuIsOpen) {
-        if (!this.elementRef.nativeElement.contains(e.target)) {
-          this.BurgerMenuService.close();
-        }
-      }
-    });
   }
 }
