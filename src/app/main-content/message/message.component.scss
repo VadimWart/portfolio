@@ -10,10 +10,19 @@
   height: 150px;
   transform: translate(-50%, -50%);
   font-size: 24px;
+  @include mobile900 {
+    width: 260px;
+  }
 }
 
 .container2 {
   @include flexBox(flex, center, center);
-  background-color: hsla(78, 80%, 57%, 0.2);
+  background-color: $green-color;
   border-radius: 10px;
+  color: $gray-color;
+  @include mobile900 {
+    padding: 8px;
+    font-size: 14px;
+    max-width: 300px;
+  }
 }
