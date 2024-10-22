@@ -7,12 +7,14 @@
     "headline": "I am :",
     "button": "Contact me"
   },
+
   "IMPRINT": {
     "Title": "Imprint",
     "Contact": "Contact",
     "Phone": "Phone",
     "Source": "Source"
   },
+
   "RESPONSEMESSAGE": {
     "message": " Thanks for your message. I’ll respond shortly."
   },
@@ -45,6 +47,7 @@
     "showMore": "Show me more",
     "showLess": "Show me less"
   },
+
   "REFERENCES": {
     "rederencesTitle": "References",
     "Salmai": "Vadim proved to be an extremely reliable team member in our group work, always completing his assigned tasks on time and with great care. He was a particularly valuable support for the team when it came to complex JavaScript problems, as he always found a suitable solution and was able to help others when they had difficulties. His ability to master even demanding tasks with confidence contributed significantly to the success of our project.",
@@ -54,6 +57,7 @@
     "mobileHeadline": "Need a teamplayer?",
     "colleagues": "Here what my colleagues said about me"
   },
+
   "CONTACTFIELD": {
     "contactfieldTitle": "Contact me",
     "nameField": "Name is required",

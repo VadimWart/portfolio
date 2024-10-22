@@ -7,15 +7,18 @@
     "headline": "Ich bin :",
     "button": "Kontaktiere mich"
   },
+
   "IMPRINT": {
     "Title": "Impressum",
     "Contact": "Kontakt",
     "Phone": "Telefon",
     "Source": "Quelle"
   },
+
   "RESPONSEMESSAGE": {
     "message": "Vielen Dank für Ihre Nachricht, ich werde mich in Kürze bei Ihnen melden."
   },
+
   "SKILLSET": {
     "skillsTitle": "Mein Skill Set",
     "main": "Die IT-Landschaft entwickelt sich ständig weiter und bringt neue Technologien und Methoden mit sich. Um motiviert zu bleiben und meine IT-Kenntnisse zu erweitern, sind ein strategischer Ansatz, eine neugierige Denkweise und die Bereitschaft zum lebenslangen Lernen erforderlich.",
@@ -28,6 +31,7 @@
     "myWork": "Meine Arbeiten",
     "contact": "Kontakt"
   },
+
   "MYWORK": {
     "myWorkTitle": "Meine Arbeiten",
     "about": "Task-Manager inspiriert vom Kanban-System, entwickelt zum Erstellen und Organisieren von Aufgaben. Optimale Nutzung durch die Drag and Drop Funktion, die es ermöglicht, Aufgaben einfach zuzuweisen und Kategorien festzulegen.",
@@ -43,6 +47,7 @@
     "showMore": "Mehr Anzeigen",
     "showLess": "Weniger Anzeigen"
   },
+
   "REFERENCES": {
     "rederencesTitle": "Referenzen",
     "Salmai": "Vadim hat sich in unserer Gruppenarbeit als äußerst zuverlässiger Teamkollege erwiesen, der seine zugeteilten Aufgaben stets termingerecht und mit großer Sorgfalt erledigte. Besonders bei komplexen JavaScript-Problemen war er eine wertvolle Unterstützung für das Team, da er immer eine passende Lösung fand und anderen bei Schwierigkeiten weiterhelfen konnte. Seine Fähigkeit, auch anspruchsvolle Aufgaben souverän zu meistern, hat entscheidend zum Erfolg unseres Projekts beigetragen.",
@@ -52,6 +57,7 @@
     "mobileHeadline": "Brauchen Sie einen Teamplayer",
     "colleagues": "Hier sehen Sie , was meine Kollegen über mich sagen."
   },
+
   "CONTACTFIELD": {
     "contactfieldTitle": "Kontaktiere mich",
     "nameField": "Name ist erforderlich",
