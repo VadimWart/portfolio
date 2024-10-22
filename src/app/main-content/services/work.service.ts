@@ -24,7 +24,7 @@ export class WorkService {
       numberDesktop: './assets/img/1-desktop.png',
       project: 'Project Join',
       git: 'https://github.com/VadimWart/join_app.git/',
-      liveTest: 'https://join.de',
+      liveTest: 'http://join.vadim-wart.com/',
     },
     {
       about: 'MYWORK.aboutSecond',
@@ -35,7 +35,7 @@ export class WorkService {
       numberDesktop: './assets/img/2-desktop.png',
       project: 'Project El Pollo Loco',
       git: 'https://github.com/VadimWart/El-Pollo-Loco.git/',
-      liveTest: 'https://elpollo.com/',
+      liveTest: 'http://pollo-loco.vadim-wart.com/',
     },
   ];
 
