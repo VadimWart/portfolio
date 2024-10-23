@@ -22,6 +22,23 @@ export class BurgerMenuComponent {
     private renderer: Renderer2
   ) {}
 
+  scrollToSection(sectionId: string) {
+    // Hole das Element anhand der ID
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      // Führe den Scroll-Vorgang aus und passe den Offset manuell an
+      let yOffset = -60; // Hier kannst du den Offset anpassen
+      let y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+
+      // Menü schließen
+      this.toggleMenu();
+    }
+  }
+
   toggleMenu() {
     this.BurgerMenuService.toggleMenu();
   }
