@@ -1,7 +1,14 @@
 <header [ngStyle]="getDynamicStyle()" [ngClass]="{ 'show-header': showHeader }">
   <nav class="sidebar">
     <div>
-      <img class="navbar-logo" src="./../../../assets/img/logo130.svg" alt="" />
+      <a [routerLink]="['']">
+        <img
+          [routerLink]="['']"
+          class="navbar-logo"
+          src="./../../../assets/img/logo130.svg"
+          alt=""
+        />
+      </a>
     </div>
 
     <ul *ngIf="isDesktop" class="navigation-line">

@@ -3,11 +3,12 @@ import { Component, inject, Input } from '@angular/core';
 import { ScrollService } from '../services/scroll.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../services/translation.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-first-page',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   templateUrl: './first-page.component.html',
   styleUrl: './first-page.component.scss',
 })

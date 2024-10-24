@@ -3,16 +3,16 @@
   [ngClass]="this.BurgerMenuService.menuIsOpen ? 'animate' : 'animate-back'"
 >
   <div class="column">
-    <a (click)="scrollToSection('me')" [routerLink]="['']">{{
+    <a [routerLink]="['']" (click)="scrollToSection('me')">{{
       "BURGERMENU.whyMe" | translate
     }}</a>
-    <a (click)="scrollToSection('skillsMobile')" [routerLink]="['']">{{
+    <a [routerLink]="['']" (click)="scrollToSection('skillsMobile')">{{
       "BURGERMENU.skills" | translate
     }}</a>
-    <a (click)="scrollToSection('myWorkMobile')" [routerLink]="['']">{{
+    <a [routerLink]="['']" (click)="scrollToSection('myWorkMobile')">{{
       "BURGERMENU.myWork" | translate
     }}</a>
-    <a (click)="scrollToSection('contact')" [routerLink]="['']">{{
+    <a [routerLink]="['']" (click)="scrollToSection('contact')">{{
       "BURGERMENU.contact" | translate
     }}</a>
     <div>

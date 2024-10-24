@@ -4,14 +4,14 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { BurgerMenuService } from '../services/burger-menu.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../services/translation.service';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
   imports: [CommonModule, NavbarComponent, TranslateModule, RouterModule],
   templateUrl: './burger-menu.component.html',
-  styleUrl: './burger-menu.component.scss',
+  styleUrls: ['./burger-menu.component.scss'],
 })
 export class BurgerMenuComponent {
   public translate = inject(TranslateService);
@@ -20,24 +20,41 @@ export class BurgerMenuComponent {
   constructor(
     public BurgerMenuService: BurgerMenuService,
     private elementRef: ElementRef,
-    private renderer: Renderer2
-  ) {}
+    private renderer: Renderer2,
+    private router: Router
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const fragment = this.router.url.split('#')[1];
+        if (fragment) {
+          this.scrollToElement(fragment);
+        }
+      }
+    });
+  }
 
   scrollToSection(sectionId: string) {
-    // Hole das Element anhand der ID
-    const element = document.getElementById(sectionId);
+    // Warte, bis Angular den View aktualisiert hat, falls *ngIf verwendet wird
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
 
-    if (element) {
-      // Führe den Scroll-Vorgang aus und passe den Offset manuell an
-      let yOffset = -60; // Hier kannst du den Offset anpassen
-      let y =
-        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      if (element) {
+        const yOffset = -60;
+        const y =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-      window.scrollTo({ top: y, behavior: 'smooth' });
+        window.scrollTo({ top: y, behavior: 'smooth' });
 
-      // Menü schließen
-      this.toggleMenu();
-    }
+        this.toggleMenu();
+      } else {
+        console.warn(`Element mit der ID ${sectionId} wurde nicht gefunden.`);
+      }
+    }, 100); // Delay einbauen, damit das Element gerendert wird
+  }
+
+  scrollToElement(elementId: string) {
+    // Verwende den gleichen Scroll-Vorgang wie in scrollToSection
+    this.scrollToSection(elementId);
   }
 
   toggleMenu() {
