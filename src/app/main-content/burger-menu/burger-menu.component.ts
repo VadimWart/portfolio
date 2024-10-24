@@ -4,11 +4,12 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { BurgerMenuService } from '../services/burger-menu.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../services/translation.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, TranslateModule],
+  imports: [CommonModule, NavbarComponent, TranslateModule, RouterModule],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss',
 })

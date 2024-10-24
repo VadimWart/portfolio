@@ -14,3 +14,17 @@ section {
 a {
   color: $green-color;
 }
+
+.arrow-container {
+  @include flexBox(flex, center, center);
+  margin-top: 54px;
+  position: relative;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.hover-image {
+  position: absolute;
+  bottom: 0;
+  transition: 75ms ease-out;
+}
