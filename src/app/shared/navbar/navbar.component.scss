@@ -34,7 +34,7 @@ header {
     padding: 0;
     flex-direction: column;
     @include flexBox(flex, center, center);
-    gap: 100px;
+    gap: 70px;
     > li {
       margin: 15px 0;
       > a {
