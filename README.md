@@ -1,27 +1,70 @@
-# Portfolio
+# Portfolio Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+Welcome to my personal portfolio! This is a modern, responsive, and interactive portfolio website built using **Angular 17.0.3**, **TypeScript**, **SCSS**, and **HTML**. It's designed to showcase my skills, projects, and professional background in a clean and user-friendly interface.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Technologies Used
 
-## Code scaffolding
+- **Frontend:**
+  - Angular (Framework)
+  - TypeScript (for type safety and better code structure)
+  - SCSS (for styling and responsive design)
+  - HTML5 (for structure and content)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Tools:**
+  - Visual Studio Code (Code editor)
+  - Git (Version control)
+  - GitHub (Repository hosting)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Features
 
-## Running unit tests
+- **Responsive Design:** 
+  - Fully responsive layout for both desktop and mobile devices.
+  
+- **About Me Section:** 
+  - A brief introduction to who I am and what I do.
+  
+- **Project Showcase:**
+  - Displays a variety of projects I have worked on, complete with descriptions and links to their repositories or live demos.
+  
+- **Skills Overview:**
+  - Highlights the technical skills and tools I use in my development process.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Contact Form:**
+  - Allows visitors to send messages directly through the portfolio.
 
-## Running end-to-end tests
+- **Interactive Navbar:**
+  - Smooth navigation between different sections of the website.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
+## 🌟 Screenshots
 
-## Further help
+### Homepage
+![Homepage](./portfolio_1.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Skills Section
+![Skills Section](./portfolio_skills.png)
+
+### Project Section
+![Project Section](./portfolio_works.png)
+
+---
+## 📧 Contact
+
+If you have any questions or would like to connect, feel free to reach out to me:
+
+- **Email**: [your.email@example.com](mailto:contact@vadim-wart.com)
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/vadim-wart-a4564a32a)
+- **GitHub**: [Your GitHub](https://github.com/VadimWart)
+
+I'm always happy to discuss new opportunities, collaborations, or just connect with like-minded professionals! 😊
+
+
+
+
+
+
+
