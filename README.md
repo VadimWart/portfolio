@@ -40,6 +40,11 @@ Welcome to my personal portfolio! This is a modern, responsive, and interactive 
   - Smooth navigation between different sections of the website.
 
 ---
+## 🌐 Live Demo
+
+- **To Portfolio**: [Live Test](http://join.vadim-wart.com/)  
+
+---
 ## 🌟 Screenshots
 
 ### Homepage
